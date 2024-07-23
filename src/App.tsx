@@ -8,7 +8,7 @@ function App() {
 
     const handleResize = () => {
       // Increment iframeKey to change the key prop on the iframe, causing it to reload
-      // setIframeKey((prevKey: any) => prevKey + 1);
+      setIframeKey((prevKey: any) => prevKey + 1);
     };
 
     window.addEventListener('resize', handleResize);
@@ -19,7 +19,7 @@ function App() {
   return (
     <iframe
       key={iframeKey}
-      src="/homepage.pdf#toolbar=0&scrollbar=0"
+      src="homepage.pdf#toolbar=0&scrollbar=0"
       style={{
         width: '100vw',
         height: '100vh',
