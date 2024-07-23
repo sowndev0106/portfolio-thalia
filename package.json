@@ -2,6 +2,7 @@
   "name": "portfolio-thalia",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://nguyenthanhson162001.github.io/portfolio-thalia/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^13.0.0",
