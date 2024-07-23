@@ -5,6 +5,8 @@ function App() {
   const [iframeKey, setIframeKey] = useState(0);
 
   useEffect(() => {
+    alert("This is a PDF viewer. Resize the window to see the PDF viewer in action.");
+
     const handleResize = () => {
       // Increment iframeKey to change the key prop on the iframe, causing it to reload
       setIframeKey((prevKey: any) => prevKey + 1);
@@ -15,20 +17,17 @@ function App() {
     // Cleanup function to remove the event listener
     return () => window.removeEventListener('resize', handleResize);
   }, [])
-  //   <iframe
-  //   key={iframeKey}
-  //   src="/homepage.pdf#toolbar=0&scrollbar=0"
-  //   style={{
-  //     width: '100vw',
-  //     height: '100vh',
-  //     overflow: 'hidden',
-  //     border: 'none'
-  //   }}
-  // ></iframe>
   return (
-    <div>
-      <h1>DDM</h1>
-    </div>
+    <iframe
+      key={iframeKey}
+      src="/homepage.pdf#toolbar=0&scrollbar=0"
+      style={{
+        width: '100vw',
+        height: '100vh',
+        overflow: 'hidden',
+        border: 'none'
+      }}
+    ></iframe>
   );
 }
 
