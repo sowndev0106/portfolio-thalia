@@ -5,11 +5,10 @@ function App() {
   const [iframeKey, setIframeKey] = useState(0);
 
   useEffect(() => {
-    alert("This is a PDF viewer. Resize the window to see the PDF viewer in action.");
 
     const handleResize = () => {
       // Increment iframeKey to change the key prop on the iframe, causing it to reload
-      setIframeKey((prevKey: any) => prevKey + 1);
+      // setIframeKey((prevKey: any) => prevKey + 1);
     };
 
     window.addEventListener('resize', handleResize);
