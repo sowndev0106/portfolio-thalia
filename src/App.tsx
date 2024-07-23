@@ -22,7 +22,7 @@ function App() {
       // Calculate the zoom level as a percentage
       const zoomLevel = (viewportWidth / pdfNaturalWidth) * 100;
 
-      setIframeSrc(`/portfolio-thalia/homepage.pdf#toolbar=0&scrollbar=0&statusbar=0&view=FitH&zoom=${zoomLevel}`);
+      setIframeSrc(`homepage.pdf#toolbar=0&scrollbar=0&statusbar=0&view=FitH&zoom=${zoomLevel}`);
       // Remove styles when on phone
       setIframeStyle({
         width: '100vw',
@@ -30,7 +30,7 @@ function App() {
         border: 'none',
       });
     } else {
-      setIframeSrc('/portfolio-thalia/homepage.pdf#toolbar=0&scrollbar=0&statusbar=0&view=FitH');
+      setIframeSrc('homepage.pdf#toolbar=0&scrollbar=0&statusbar=0&view=FitH');
       // Apply styles for non-phone devices
       setIframeStyle({
         width: '100%',
