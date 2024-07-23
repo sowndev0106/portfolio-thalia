@@ -19,7 +19,7 @@ function App() {
   return (
     <iframe
       key={iframeKey}
-      src="homepage.pdf#toolbar=0&scrollbar=0"
+      src="/portfolio-thalia/homepage.pdf#toolbar=0&scrollbar=0"
       style={{
         width: '100vw',
         height: '100vh',
