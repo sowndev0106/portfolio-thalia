@@ -15,17 +15,20 @@ function App() {
     // Cleanup function to remove the event listener
     return () => window.removeEventListener('resize', handleResize);
   }, [])
+  //   <iframe
+  //   key={iframeKey}
+  //   src="/homepage.pdf#toolbar=0&scrollbar=0"
+  //   style={{
+  //     width: '100vw',
+  //     height: '100vh',
+  //     overflow: 'hidden',
+  //     border: 'none'
+  //   }}
+  // ></iframe>
   return (
-    <iframe
-      key={iframeKey}
-      src="/homepage.pdf#toolbar=0&scrollbar=0"
-      style={{
-        width: '100vw',
-        height: '100vh',
-        overflow: 'hidden',
-        border: 'none'
-      }}
-    ></iframe>
+    <div>
+      <h1>DDM</h1>
+    </div>
   );
 }
 
