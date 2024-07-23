@@ -2,24 +2,9 @@ import { useEffect, useState } from 'react';
 import './App.css';
 
 function App() {
-  const [iframeKey, setIframeKey] = useState(0);
-
-  useEffect(() => {
-
-    const handleResize = () => {
-      // Increment iframeKey to change the key prop on the iframe, causing it to reload
-      setIframeKey((prevKey: any) => prevKey + 1);
-    };
-
-    window.addEventListener('resize', handleResize);
-
-    // Cleanup function to remove the event listener
-    return () => window.removeEventListener('resize', handleResize);
-  }, [])
   return (
     <iframe
-      key={iframeKey}
-      src="/portfolio-thalia/homepage.pdf#toolbar=0&scrollbar=0"
+      src="homepage.pdf#toolbar=0&scrollbar=0&navpanes=0&statusbar=0&view=FitH"
       style={{
         width: '100vw',
         height: '100vh',
