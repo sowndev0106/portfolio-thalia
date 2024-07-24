@@ -12,7 +12,6 @@ function App() {
 
     // Set the iframe src and style based on whether the user is on a mobile device
     if (detectMobile()) {
-      alert("This is phone");
       // Estimate the natural width of the PDF content in pixels
       const pdfNaturalWidth = 1000; // Example value; adjust based on your PDF
 
@@ -29,6 +28,9 @@ function App() {
         height: '100vh',
         border: 'none',
       });
+      // redirect to the PDF file
+      window.location.href = 'homepage.pdf';
+
     } else {
       setIframeSrc('homepage.pdf#toolbar=0&scrollbar=0&statusbar=0&view=FitH');
       // Apply styles for non-phone devices
