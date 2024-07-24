@@ -30,7 +30,7 @@ function App() {
         margin: 0,
       });
       // redirect to the PDF file
-      // window.location.href = 'homepage.pdf';
+      window.location.href = 'homepage.pdf';
 
     } else {
       setIframeSrc('homepage.pdf#toolbar=0&scrollbar=0&statusbar=0&view=FitH');
