@@ -46,6 +46,7 @@ function App() {
     <iframe
       src={iframeSrc}
       style={iframeStyle}
+      title="portfolio thalia "
     ></iframe>
   );
 }
