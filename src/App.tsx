@@ -27,9 +27,10 @@ function App() {
         width: '100vw',
         height: '100vh',
         border: 'none',
+        margin: 0,
       });
       // redirect to the PDF file
-      window.location.href = 'homepage.pdf';
+      // window.location.href = 'homepage.pdf';
 
     } else {
       setIframeSrc('homepage.pdf#toolbar=0&scrollbar=0&statusbar=0&view=FitH');
@@ -38,16 +39,18 @@ function App() {
         width: '100%',
         height: '100vh',
         border: 'none',
+        margin: 0,
       });
     }
   }, []);
 
   return (
-    <iframe
-      src={iframeSrc}
-      style={iframeStyle}
-      title="portfolio thalia "
-    ></iframe>
+
+    <div style={iframeStyle}>
+      <object type="text/html" data={iframeSrc}
+        style={iframeStyle}>
+      </object>
+    </div>
   );
 }
 
