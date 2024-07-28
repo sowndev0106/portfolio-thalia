@@ -9,8 +9,8 @@ export default function Homepage() {
         <div className="bg-white">
             <MainNav />
             <BannerHeader />
-            <div className="bg-zinc-800" >
-                <div className='bg-center h-[2200px] bg-homepage  bg-no-repeat bg-cover p-10 rounded-t-[150px]  relative z-10'>
+            <div className="bg-black" >
+                <div className='bg-center h-[2200px] bg-homepage  bg-no-repeat bg-cover p-10 sm:rounded-t-[100px]  md:rounded-t-[120px]  relative z-50'>
                     <Expertise />
                 </div>
             </div>

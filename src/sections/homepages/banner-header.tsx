@@ -28,19 +28,18 @@ export default function BannerHeader() {
 
                 <div className=" w-full text-center h-1/2 flex flex-col justify-between items-center pb-16 relative" >
                     <div className="inline-block mt-5">
-                        <a href="#next-section" className="bg-blue-800 button-circle font-bold inline-block">
+                        <a href="#next-section" className="bg-blue-800 button-circle  p-7 md:p-9 xl:p-9 ">
                             <img src="./assets/images/icon/down-arrow.png" alt="Contact" className="inline-block" />
                         </a>
                     </div>
                     <div className="w-full z-20" >
-                        <div className='p-10'>
+                        <div className='py-10'>
                             <Marquee
                                 loop={1}
                                 autoFill
-                                pauseOnHover={true}
                             >
                                 {brandingIcons.map((icon, index) => (
-                                    <div className='mr-10' >
+                                    <div className='mr-10'>
                                         <img src={icon.path} alt={icon.url} />
                                     </div>
                                 ))}

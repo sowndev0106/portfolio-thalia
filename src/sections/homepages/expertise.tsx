@@ -9,11 +9,21 @@ import Slider from "react-slick";
 import VariableWidth from '../../components/VariableWidth';
 import { useRef } from "react";
 import { useDraggable } from "react-use-draggable-scroll";
+import GamingWebsite from './gaming-website';
+import GroupBannerSection from './group-banner-section';
 
 export default function Expertise() {
     return (
-        <div >
+        <div className='mx-auto container pt-10'>
             <div className='text-7xl font-bold w-full text-center text-yellow-green'>Our Expertise</div>
+
+            <div className='py-20'>
+                <GamingWebsite />
+            </div>
+
+            <div className='py-20'>
+                <GroupBannerSection />
+            </div>
         </div>
     );
 }
