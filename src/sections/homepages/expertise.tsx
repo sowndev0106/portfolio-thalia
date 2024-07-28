@@ -1,28 +1,41 @@
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper/modules';
-import { brandingIcons, chipSections } from './data';
-import 'swiper/css';
-import Marquee from 'react-fast-marquee';
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import Slider from "react-slick";
-import VariableWidth from '../../components/VariableWidth';
-import { useRef } from "react";
-import { useDraggable } from "react-use-draggable-scroll";
+import { brandingGuidelineBanners, brandingLogos, gameFiBanners, gamingCreativeBanners, inGameUXUIBanners, web3Banners } from './data';
 import GamingWebsite from './gaming-website';
 import GroupBannerSection from './group-banner-section';
+import LogoBranding from './branding-logo';
 
 export default function Expertise() {
     return (
         <div className='mx-auto container pt-10'>
             <div className='text-7xl font-bold w-full text-center text-yellow-green'>Our Expertise</div>
 
-            <div className='py-20'>
+            <div className='py-10'>
                 <GamingWebsite />
             </div>
 
-            <div className='py-20'>
-                <GroupBannerSection />
+            <div className='py-10'>
+                <GroupBannerSection groupBanners={gamingCreativeBanners} title='Gaming Creative Banner' category='GAME INDUSTRY' />
+            </div>
+
+            <div className='py-10 '>
+                <GroupBannerSection groupBanners={inGameUXUIBanners} title='In-game UI/UX' category='GAME INDUSTRY' numberRowShowOnMobile={1} />
+            </div>
+
+            <div className='py-10'>
+                <GroupBannerSection groupBanners={web3Banners} title='Web3' category='GAME INDUSTRY' colorCategory='purple' />
+            </div>
+
+            <div className='py-10'>
+                <GroupBannerSection groupBanners={gameFiBanners} title='GameFi' category='GAME INDUSTRY' colorCategory='purple' />
+            </div>
+
+
+            <div className='py-10'>
+                <LogoBranding logos={brandingLogos} title='GameFi' category='GAME INDUSTRY' colorCategory='purple' />
+            </div>
+
+
+            <div className='py-10'>
+                <GroupBannerSection groupBanners={brandingGuidelineBanners} title='Brand Guideline' category='GAME INDUSTRY' />
             </div>
         </div>
     );

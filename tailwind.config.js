@@ -12,6 +12,7 @@ module.exports = {
       },
       colors: {
         "yellow-green": "#B6E802",
+        "purple": "#3D1A8E",
       },
       keyframes: {
         scroll: {
