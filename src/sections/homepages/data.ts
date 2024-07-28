@@ -87,7 +87,7 @@ export const gamingCreativeBanners: Array<IGroupBannerProps> = [{
     left: [
         {
             title: "Gaming Creative Banner",
-            image: "assets/images/banners/gaming-creative-banner-1.png",
+            image: "./assets/images/banners/gaming-creative-banner-1.png",
             borderColor: "purple",
             rounded: {
                 topLeft: true,
@@ -100,7 +100,7 @@ export const gamingCreativeBanners: Array<IGroupBannerProps> = [{
     right: [
         {
             title: "Gaming Creative Banner 2",
-            image: "assets/images/banners/gaming-creative-banner-2.png",
+            image: "./assets/images/banners/gaming-creative-banner-2.png",
             borderColor: "purple",
             rounded: {
                 topLeft: true,
@@ -110,7 +110,7 @@ export const gamingCreativeBanners: Array<IGroupBannerProps> = [{
         },
         {
             title: "Gaming Creative Banner 3",
-            image: "assets/images/banners/gaming-creative-banner-3.png",
+            image: "./assets/images/banners/gaming-creative-banner-3.png",
             borderColor: "purple",
             rounded: {
                 topLeft: true,
@@ -119,7 +119,7 @@ export const gamingCreativeBanners: Array<IGroupBannerProps> = [{
         },
         {
             title: "Gaming Creative Banner 3",
-            image: "assets/images/banners/gaming-creative-banner-4.png",
+            image: "./assets/images/banners/gaming-creative-banner-4.png",
             borderColor: "purple",
             rounded: {
                 topLeft: true,
@@ -128,7 +128,7 @@ export const gamingCreativeBanners: Array<IGroupBannerProps> = [{
         },
         {
             title: "Gaming Creative Banner 3",
-            image: "assets/images/banners/gaming-creative-banner-5.png",
+            image: "./assets/images/banners/gaming-creative-banner-5.png",
             borderColor: "purple",
             rounded: {
                 topLeft: true,
@@ -143,7 +143,7 @@ export const inGameUXUIBanners: Array<IGroupBannerProps> = [
         left: [
             {
                 title: "Gaming Creative Banner",
-                image: "assets/images/banners/in-game-uxui-1.png",
+                image: "./assets/images/banners/in-game-uxui-1.png",
                 borderColor: "purple",
                 rounded: {
                     topLeft: true,
@@ -156,7 +156,7 @@ export const inGameUXUIBanners: Array<IGroupBannerProps> = [
         right: [
             {
                 title: "Gaming Creative Banner 2",
-                image: "assets/images/banners/in-game-uxui-2.png",
+                image: "./assets/images/banners/in-game-uxui-2.png",
                 borderColor: "purple",
                 rounded: {
                     topLeft: true,
@@ -166,7 +166,7 @@ export const inGameUXUIBanners: Array<IGroupBannerProps> = [
             },
             {
                 title: "Gaming Creative Banner 3",
-                image: "assets/images/banners/in-game-uxui-3.png",
+                image: "./assets/images/banners/in-game-uxui-3.png",
                 borderColor: "purple",
                 rounded: {
                     topLeft: true,
@@ -175,7 +175,7 @@ export const inGameUXUIBanners: Array<IGroupBannerProps> = [
             },
             {
                 title: "Gaming Creative Banner 3",
-                image: "assets/images/banners/in-game-uxui-4.png",
+                image: "./assets/images/banners/in-game-uxui-4.png",
                 borderColor: "purple",
                 rounded: {
                     topLeft: true,
@@ -184,7 +184,7 @@ export const inGameUXUIBanners: Array<IGroupBannerProps> = [
             },
             {
                 title: "Gaming Creative Banner 3",
-                image: "assets/images/banners/in-game-uxui-5.png",
+                image: "./assets/images/banners/in-game-uxui-5.png",
                 borderColor: "purple",
                 rounded: {
                     topLeft: true,
@@ -198,7 +198,7 @@ export const inGameUXUIBanners: Array<IGroupBannerProps> = [
         left: [
             {
                 title: "Gaming Creative Banner",
-                image: "assets/images/banners/in-game-uxui-6.png",
+                image: "./assets/images/banners/in-game-uxui-6.png",
                 borderColor: "purple",
                 rounded: {
                     topLeft: true,
@@ -211,7 +211,7 @@ export const inGameUXUIBanners: Array<IGroupBannerProps> = [
         right: [
             {
                 title: "Gaming Creative Banner 2",
-                image: "assets/images/banners/in-game-uxui-7.png",
+                image: "./assets/images/banners/in-game-uxui-7.png",
                 borderColor: "purple",
                 rounded: {
                     topLeft: true,
@@ -221,7 +221,7 @@ export const inGameUXUIBanners: Array<IGroupBannerProps> = [
             },
             {
                 title: "Gaming Creative Banner 3",
-                image: "assets/images/banners/in-game-uxui-8.png",
+                image: "./assets/images/banners/in-game-uxui-8.png",
                 borderColor: "purple",
                 rounded: {
                     topLeft: true,
@@ -230,7 +230,7 @@ export const inGameUXUIBanners: Array<IGroupBannerProps> = [
             },
             {
                 title: "Gaming Creative Banner 3",
-                image: "assets/images/banners/in-game-uxui-9.png",
+                image: "./assets/images/banners/in-game-uxui-9.png",
                 borderColor: "purple",
                 rounded: {
                     topLeft: true,
@@ -239,7 +239,7 @@ export const inGameUXUIBanners: Array<IGroupBannerProps> = [
             },
             {
                 title: "Gaming Creative Banner 3",
-                image: "assets/images/banners/in-game-uxui-10.png",
+                image: "./assets/images/banners/in-game-uxui-10.png",
                 borderColor: "purple",
                 rounded: {
                     topLeft: true,
@@ -257,7 +257,7 @@ export const web3Banners: Array<IGroupBannerProps> = [{
     left: [
         {
             title: "Gaming Creative Banner",
-            image: "assets/images/banners/web3-1.png",
+            image: "./assets/images/banners/web3-1.png",
             borderColor: "purple",
             rounded: {
                 topLeft: true,
@@ -270,7 +270,7 @@ export const web3Banners: Array<IGroupBannerProps> = [{
     right: [
         {
             title: "Gaming Creative Banner 2",
-            image: "assets/images/banners/web3-2.png",
+            image: "./assets/images/banners/web3-2.png",
             borderColor: "purple",
             rounded: {
                 topLeft: true,
@@ -284,7 +284,7 @@ export const gameFiBanners: Array<IGroupBannerProps> = [{
     left: [
         {
             title: "Gaming Creative Banner",
-            image: "assets/images/banners/game-fi-1.png",
+            image: "./assets/images/banners/game-fi-1.png",
             borderColor: "purple",
             rounded: {
                 topLeft: true,
@@ -297,7 +297,7 @@ export const gameFiBanners: Array<IGroupBannerProps> = [{
     right: [
         {
             title: "Gaming Creative Banner 2",
-            image: "assets/images/banners/game-fi-2.png",
+            image: "./assets/images/banners/game-fi-2.png",
             borderColor: "purple",
             rounded: {
                 topLeft: true,
@@ -307,7 +307,7 @@ export const gameFiBanners: Array<IGroupBannerProps> = [{
         },
         {
             title: "Gaming Creative Banner 3",
-            image: "assets/images/banners/game-fi-3.png",
+            image: "./assets/images/banners/game-fi-3.png",
             borderColor: "purple",
             rounded: {
                 topLeft: true,
@@ -316,7 +316,7 @@ export const gameFiBanners: Array<IGroupBannerProps> = [{
         },
         {
             title: "Gaming Creative Banner 3",
-            image: "assets/images/banners/game-fi-4.png",
+            image: "./assets/images/banners/game-fi-4.png",
             borderColor: "purple",
             rounded: {
                 topLeft: true,
@@ -325,7 +325,7 @@ export const gameFiBanners: Array<IGroupBannerProps> = [{
         },
         {
             title: "Gaming Creative Banner 3",
-            image: "assets/images/banners/game-fi-5.png",
+            image: "./assets/images/banners/game-fi-5.png",
             borderColor: "purple",
             rounded: {
                 topLeft: true,
@@ -340,7 +340,7 @@ export const brandingGuidelineBanners: Array<IGroupBannerProps> = [{
     left: [
         {
             title: "Gaming Creative Banner",
-            image: "assets/images/banners/brand-guideline-1.png",
+            image: "./assets/images/banners/brand-guideline-1.png",
             borderColor: "purple",
             rounded: {
                 topLeft: true,
@@ -352,7 +352,7 @@ export const brandingGuidelineBanners: Array<IGroupBannerProps> = [{
     right: [
         {
             title: "Gaming Creative Banner 2",
-            image: "assets/images/banners/brand-guideline-2.png",
+            image: "./assets/images/banners/brand-guideline-2.png",
             borderColor: "purple",
             rounded: {
                 topLeft: true,
@@ -362,7 +362,7 @@ export const brandingGuidelineBanners: Array<IGroupBannerProps> = [{
         },
         {
             title: "Gaming Creative Banner 3",
-            image: "assets/images/banners/brand-guideline-3.png",
+            image: "./assets/images/banners/brand-guideline-3.png",
             borderColor: "purple",
             rounded: {
                 topLeft: true,
@@ -371,7 +371,7 @@ export const brandingGuidelineBanners: Array<IGroupBannerProps> = [{
         },
         {
             title: "Gaming Creative Banner 3",
-            image: "assets/images/banners/brand-guideline-4.png",
+            image: "./assets/images/banners/brand-guideline-4.png",
             borderColor: "purple",
             rounded: {
                 topLeft: true,
@@ -380,7 +380,7 @@ export const brandingGuidelineBanners: Array<IGroupBannerProps> = [{
         },
         {
             title: "Gaming Creative Banner 3",
-            image: "assets/images/banners/brand-guideline-5.png",
+            image: "./assets/images/banners/brand-guideline-5.png",
             borderColor: "purple",
             rounded: {
                 topLeft: true,
@@ -392,34 +392,34 @@ export const brandingGuidelineBanners: Array<IGroupBannerProps> = [{
 
 export const brandingLogos :Array<IBrandingLogo> = [
     {
-        path:"assets/images/logo-branding/logo-branding-1.png",
+        path:"./assets/images/logo-branding/logo-branding-1.png",
         url:"#"
     }
     ,{
-        path:"assets/images/logo-branding/logo-branding-2.png",
+        path:"./assets/images/logo-branding/logo-branding-2.png",
         url:"#"
     }
     ,{
-        path:"assets/images/logo-branding/logo-branding-3.png",
+        path:"./assets/images/logo-branding/logo-branding-3.png",
         url:"#"
     }
     ,{
-        path:"assets/images/logo-branding/logo-branding-4.png",
+        path:"./assets/images/logo-branding/logo-branding-4.png",
         url:"#"
     }
     ,{
-        path:"assets/images/logo-branding/logo-branding-5.png",
+        path:"./assets/images/logo-branding/logo-branding-5.png",
         url:"#"
     }
     ,{
-        path:"assets/images/logo-branding/logo-branding-6.png",
+        path:"./assets/images/logo-branding/logo-branding-6.png",
         url:"#"
     },
     {
-        path:"assets/images/logo-branding/logo-branding-7.png",
+        path:"./assets/images/logo-branding/logo-branding-7.png",
         url:"#"
     }    ,{
-        path:"assets/images/logo-branding/logo-branding-8.png",
+        path:"./assets/images/logo-branding/logo-branding-8.png",
         url:"#"
     },
 ]

@@ -38,7 +38,7 @@ function RenderBanner({ banner, key }: { banner: IBanner, key: number }) {
     return (
         <div className="relative" key={key}>
             <img src={banner.image} alt={banner.title} className={
-                ` object-cover h-full 
+                ` object-cover  sm:h-full
                     ${banner.rounded?.topLeft && "rounded-tl-2xl"}
                     ${banner.rounded?.topRight && "rounded-tr-2xl"}
                     ${banner.rounded?.bottomLeft && "rounded-bl-2xl"}

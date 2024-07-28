@@ -1,11 +1,12 @@
 
+import Footer from "../sections/footer";
 import BannerHeader from "../sections/homepages/banner-header";
 import Expertise from "../sections/homepages/expertise";
 import MainNav from "../sections/nav/main-nav";
 
 export default function Homepage() {
     return (
-        <div className="bg-white">
+        <div className="bg-black" >
             <MainNav />
             <BannerHeader />
             <div className="bg-black" >
@@ -13,6 +14,7 @@ export default function Homepage() {
                     <Expertise />
                 </div>
             </div>
+            <Footer />
         </div>
     )
 

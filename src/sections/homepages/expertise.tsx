@@ -2,6 +2,7 @@ import { brandingGuidelineBanners, brandingLogos, gameFiBanners, gamingCreativeB
 import GamingWebsite from './gaming-website';
 import GroupBannerSection from './group-banner-section';
 import LogoBranding from './branding-logo';
+import EndingSection from './ending-section';
 
 export default function Expertise() {
     return (
@@ -36,6 +37,11 @@ export default function Expertise() {
 
             <div className='py-10'>
                 <GroupBannerSection groupBanners={brandingGuidelineBanners} title='Brand Guideline' category='GAME INDUSTRY' />
+            </div>
+
+
+            <div className='py-10'>
+                <EndingSection />
             </div>
         </div>
     );

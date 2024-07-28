@@ -17,7 +17,7 @@ export default function GroupBannerSection(props: IGroupBannerSectionProps) {
                 <div className=" flex flex-col">
                     <div className={`font-size-text-md w-full uppercase tracking-[8px] ${props.colorCategory ? `text-${props.colorCategory}` : "text-yellow-green"}`}>{props.category}</div>
                     <div className=' font-size-text-xl font-bold w-full  text-white'>{props.title}</div>
-                </div>#
+                </div>
                 {/* button contact */}
                 <div>
                     <ChipButton title="Contact" pathIcon="./assets/images/icon/contact-black.png" />

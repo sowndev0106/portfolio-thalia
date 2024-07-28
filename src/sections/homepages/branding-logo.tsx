@@ -26,7 +26,7 @@ export default function BrandingLogo(props: IBrandingLogoProps) {
                         props.logos.map((logo, index) => (
                             <a href={logo.url || "#"}>
                                 <div className="relative" key={index}>
-                                    <img src={logo.path} alt={logo.url} className={`border border-yellow-green border-opacity-50  object-cover h-full `} />
+                                    <img src={logo.path} alt={logo.url} className={`border border-yellow-green border-opacity-50 `} />
                                 </div>
                             </a>
                         ))
