@@ -9,7 +9,7 @@ interface IChipButton {
 }
 function ChipButton(props: IChipButton) {
     return (
-        <div className={`px-6 py-3 w-[162px] h-[50px] text-black rounded-full bg-yellow-green ${props.className || ""} text-xl flex justify-center gap-2 items-center`}>
+        <div className={`button-chip text-black rounded-full bg-yellow-green ${props.className || ""} text-xl flex justify-center gap-2 items-center`}>
             <img src={props.pathIcon} />
             <div>
                 {props.title}

@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.flex-center {
+    @apply flex items-center justify-center;
+}
+
+.font-size-text-2xl {
+    @apply text-[32px] sm:text-[32px] md:text-[40px] lg:text-[48px] xl:text-[60px] 2xl:text-[70px];
+}
+.font-size-text-lg {
+    @apply text-[14px] sm:text-[14px] md:text-[24px] lg:text-[24px] xl:text-[24px] 2xl:text-[24px];
+}
+
+
+
+.button-chip {
+    @apply rounded-full text-nowrap select-none px-5 py-2 md:px-7 md:py-3 xl:px-7 xl:py-3  
+}
+.button-circle {
+    @apply rounded-full text-nowrap select-none p-7 md:p-10 xl:p-10 
+}

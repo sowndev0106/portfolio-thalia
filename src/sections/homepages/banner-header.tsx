@@ -17,18 +17,18 @@ export default function BannerHeader() {
     return (
         <div>
             <div className="relative bg-banner-header bg-no-repeat bg-cover w-full h-screen text-white flex flex-col justify-between " >
-                <div className="container mx-auto text-center flex flex-col-reverse p-10 h-1/2">
-                    <p className="text-7xl font-bold mb-4 ">
+                <div className="font-size-text-2xl  container mx-auto text-center flex flex-col-reverse p-10 h-1/2 ">
+                    <p className=" font-bold mb-4 ">
                         with our <span className="text-yellow-green bg-[url('./assets/images/icon/ellipse.png')] bg-center bg-cover" >Creative</span> magic!
                     </p>
-                    <h1 className="text-7xl font-bold mb-4 ">
+                    <h1 className="font-bold mb-4 ">
                         Innovative Gaming & Brand Excellence
                     </h1>
                 </div>
 
                 <div className=" w-full text-center h-1/2 flex flex-col justify-between items-center pb-16 relative" >
                     <div className="inline-block mt-5">
-                        <a href="#next-section" className="bg-blue-800 rounded-full font-bold p-9 inline-block">
+                        <a href="#next-section" className="bg-blue-800 button-circle font-bold inline-block">
                             <img src="./assets/images/icon/down-arrow.png" alt="Contact" className="inline-block" />
                         </a>
                     </div>
@@ -40,7 +40,7 @@ export default function BannerHeader() {
                                 pauseOnHover={true}
                             >
                                 {brandingIcons.map((icon, index) => (
-                                    <div className=' mr-10' >
+                                    <div className='mr-10' >
                                         <img src={icon.path} alt={icon.url} />
                                     </div>
                                 ))}
@@ -48,14 +48,14 @@ export default function BannerHeader() {
                         </div>
                         <div >
                             <div
-                                className="flex  overflow-x-scroll scrollbar-hide"
+                                className="flex overflow-x-scroll scrollbar-hide "
                                 {...events}
                                 ref={ref} // add reference and events to the wrapping div
                             >
                                 {chipSections.map((chip, index) => (
                                     <div className={`border border-[${index % 2 == 0 ? '#A074FF80' : '#B6E80280'}]
-                                             rounded-full py-3 px-10 mr-5 text-white bg-[#FFFFFF1A]  text-nowrap select-none `}>
-                                        <div className='text-2xl font-normal '>
+                                             button-chip flex items-center    px-10 mr-5 text-white bg-[#FFFFFF1A]    `}>
+                                        <div className='font-size-text-lg '>
                                             {chip.text}
                                         </div>
                                     </div>
