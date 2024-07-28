@@ -9,7 +9,7 @@ export default function GamingWebsite() {
             <div className="flex items-center justify-between">
                 {/* text title */}
                 <div className=" flex flex-col">
-                    <div className='font-size-text-md w-full uppercase tracking-[8px] text-yellow-green'>GAME INDUSTRY</div>
+                    <div className='font-size-text-sm w-full uppercase tracking-[4px] md:tracking-[8px]  text-yellow-green'>GAME INDUSTRY</div>
                     <div className=' font-size-text-xl font-bold w-full  text-white'>Gaming website</div>
                 </div>#
                 {/* button contact */}

@@ -7,7 +7,7 @@ import EndingSection from './ending-section';
 export default function Expertise() {
     return (
         <div className='mx-auto container pt-10'>
-            <div className='text-7xl font-bold w-full text-center text-yellow-green'>Our Expertise</div>
+            <div className='font-size-text-2xl font-bold w-full text-center text-yellow-green'>Our Expertise</div>
 
             <div className='py-10'>
                 <GamingWebsite />

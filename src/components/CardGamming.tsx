@@ -9,7 +9,7 @@ export default function CardGaming(props: ICardGamingProps) {
         <div>
             <div className="w-full rounded-xl p-2 border border-yellow-green border-opacity-50 " >
                 <div className="p-3 flex items-center justify-between">
-                    <div className="font-size-text-md  font-bold text-white">
+                    <div className="font-size-text-sm font-bold text-white">
                         {props.title}
                     </div>
                     <a href="#next-section" className="bg-[#414141] button-circle p-2 sm:p-3 ">

@@ -15,7 +15,7 @@ export default function GroupBannerSection(props: IGroupBannerSectionProps) {
             <div className="flex items-center justify-between">
                 {/* text title */}
                 <div className=" flex flex-col">
-                    <div className={`font-size-text-md w-full uppercase tracking-[8px] ${props.colorCategory ? `text-${props.colorCategory}` : "text-yellow-green"}`}>{props.category}</div>
+                    <div className={`font-size-text-sm w-full uppercase  tracking-[4px] md:tracking-[8px] ${props.colorCategory ? `text-${props.colorCategory}` : "text-yellow-green"}`}>{props.category}</div>
                     <div className=' font-size-text-xl font-bold w-full  text-white'>{props.title}</div>
                 </div>
                 {/* button contact */}

@@ -20,10 +20,10 @@ export default function EndingSection(props: IBrandingLogoProps) {
                 <div className="flex items-center justify-center flex-wrap">
                     {
                         brandingIcons.map((logo, index) => (
-                            <div className="w-[60px] md:w-[200px] mx-3 my-1 md:mx-6  md:my-4 flex justify-center">
+                            <div className="w-[80px] md:w-[200px] mx-3 my-1 md:mx-6  md:my-4 flex justify-center">
                                 <a href={logo.url || "#"}>
                                     <div className="relative " key={index}>
-                                        <img src={logo.path} alt={logo.url} className={` object-cover h-full `} />
+                                        <img src={logo.path} alt={logo.url} className={``} />
                                     </div>
                                 </a>
                             </div>
@@ -40,7 +40,7 @@ export default function EndingSection(props: IBrandingLogoProps) {
             </div>
 
             <div className="flex items-center justify-between flex-col mt-10">
-                <div className={`font-size-text-2xl  text-white`}>Have an idea? Let’s talk.</div>
+                <div className={`font-size-text-2xl text-center  text-white`}>Have an idea? Let’s talk.</div>
 
                 <div className={` text-white text-[14px]  md:text-[22px] text-opacity-80`}>Visually attractive design from concept to final result. </div>
 
