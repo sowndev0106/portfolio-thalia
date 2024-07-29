@@ -27,8 +27,8 @@ export default function BannerHeader() {
                 </div>
 
                 <div className=" w-full text-center h-1/2 flex flex-col justify-between items-center pb-16 relative" >
-                    <div className="inline-block mt-5 animate-bounce">
-                        <a href="#next-section" className="bg-purple bg-opacity-95  button-circle   p-5 md:p-7 xl:p-7 ">
+                    <div className="inline-block mt-14 animate-bounce">
+                        <a href="#next-section" className="bg-[#601FEB] button-circle   p-5 md:p-7 xl:p-7 ">
                             <img src="./assets/images/icon/down-arrow.png" alt="Contact" className="inline-block" />
                         </a>
                     </div>

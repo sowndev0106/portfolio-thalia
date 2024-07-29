@@ -1,7 +1,9 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import CardGaming from "../../components/CardGamming";
 import ChipButton from "../../components/ChipButton";
-import { Navigation, Pagination } from "swiper/modules";
+import { Pagination } from "swiper/modules";
+import 'swiper/css';
+import 'swiper/css/pagination';
 
 export default function GamingWebsite() {
     return (
@@ -22,9 +24,9 @@ export default function GamingWebsite() {
                 <Swiper
                     loop={true}
                     spaceBetween={30}
-
-
-
+                    pagination={{
+                        clickable: true
+                    }}
                     breakpoints={{
                         320: { slidesPerView: 1.5, grabCursor: true, centeredSlides: true },  // Mobile portrait
                         480: { slidesPerView: 1.5, grabCursor: true, centeredSlides: true },  // Mobile landscape
@@ -34,7 +36,8 @@ export default function GamingWebsite() {
                         1280: { slidesPerView: 4 }, // Medium desktops
                         1536: { slidesPerView: 4 }  // Large desktops
                     }}
-                    modules={[Pagination, Navigation]}
+                    modules={[Pagination]}
+                    className="root-swiper"
                 >
                     <SwiperSlide >
                         <CardGaming image="./assets/images/banners/gamming-website-4.png" title="Disney Speedstorm" url="https://disneyspeedstorm.com/" />

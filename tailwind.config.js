@@ -30,5 +30,9 @@ module.exports = {
       },
     },
   },
+  safelist: [
+    'text-purple',
+    'border-purple',
+  ],
   plugins: [require('tailwind-scrollbar-hide')],
 }
