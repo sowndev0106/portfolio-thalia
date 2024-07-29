@@ -2,46 +2,78 @@ import { brandingGuidelineBanners, brandingLogos, gameFiBanners, gamingCreativeB
 import GamingWebsite from './gaming-website';
 import GroupBannerSection from './group-banner-section';
 import LogoBranding from './branding-logo';
-import EndingSection from './ending-section';
+import useIntersectionObserver from '../../hooks/use-intersection-observer';
+import HaveAnIdea from './have-an-idea';
+import OurValuedPartners from './our-valued-partners';
+
+const SectionWithAnimation = ({ children }: any) => {
+    const [ref, isIntersecting] = useIntersectionObserver({ threshold: 0.1 });
+    return (
+        <div ref={ref as any} className={`transition-opacity duration-500 ease-out ${isIntersecting ? 'animate-moveUp' : 'opacity-0 translate-y-5'}`}>
+            {children}
+        </div>
+    );
+};
 
 export default function Expertise() {
     return (
-        <div className='mx-auto container pt-10'>
+        <div className='mx-auto container  pt-10'>
             <div className='font-size-text-2xl font-bold w-full text-center text-yellow-green'>Our Expertise</div>
-
             <div className='py-10'>
-                <GamingWebsite />
+                <SectionWithAnimation>
+                    <GamingWebsite />
+                </SectionWithAnimation>
             </div>
 
-            <div className='py-10'>
-                <GroupBannerSection groupBanners={gamingCreativeBanners} title='Gaming Creative Banner' category='GAME INDUSTRY' />
+            <div className='py-10 px-7 '>
+                <SectionWithAnimation>
+                    <GroupBannerSection groupBanners={gamingCreativeBanners} title='Gaming Creative Banner' category='GAME INDUSTRY' />
+                </SectionWithAnimation>
             </div>
 
-            <div className='py-10 '>
-                <GroupBannerSection groupBanners={inGameUXUIBanners} title='In-game UI/UX' category='GAME INDUSTRY' numberRowShowOnMobile={1} />
+            <div className='py-10 px-7  '>
+                <SectionWithAnimation>
+                    <GroupBannerSection groupBanners={inGameUXUIBanners} title='In-game UI/UX' category='GAME INDUSTRY' numberRowShowOnMobile={1} />
+                </SectionWithAnimation>
             </div>
 
-            <div className='py-10'>
-                <GroupBannerSection groupBanners={web3Banners} title='Web3' category='GAME INDUSTRY' colorCategory='purple' />
+            <div className='py-10 px-7 '>
+                <SectionWithAnimation>
+                    <GroupBannerSection groupBanners={web3Banners} title='Web3' category='GAME INDUSTRY' colorCategory='purple' />
+                </SectionWithAnimation>
             </div>
 
-            <div className='py-10'>
-                <GroupBannerSection groupBanners={gameFiBanners} title='GameFi' category='GAME INDUSTRY' colorCategory='purple' />
-            </div>
-
-
-            <div className='py-10'>
-                <LogoBranding logos={brandingLogos} title='GameFi' category='GAME INDUSTRY' colorCategory='purple' />
-            </div>
-
-
-            <div className='py-10'>
-                <GroupBannerSection groupBanners={brandingGuidelineBanners} title='Brand Guideline' category='GAME INDUSTRY' />
+            <div className='py-10 px-7 '>
+                <SectionWithAnimation>
+                    <GroupBannerSection groupBanners={gameFiBanners} title='GameFi' category='GAME INDUSTRY' colorCategory='purple' />
+                </SectionWithAnimation>
             </div>
 
 
-            <div className='py-10'>
-                <EndingSection />
+            <div className='py-10 px-7 '>
+                <SectionWithAnimation>
+                    <LogoBranding logos={brandingLogos} title='GameFi' category='GAME INDUSTRY' colorCategory='purple' />
+                </SectionWithAnimation>
+            </div>
+
+
+            <div className='py-10 px-7 '>
+                <SectionWithAnimation>
+                    <GroupBannerSection groupBanners={brandingGuidelineBanners} title='Brand Guideline' category='GAME INDUSTRY' />
+                </SectionWithAnimation>
+            </div>
+
+
+            <div className='py-10 px-7 '>
+                <SectionWithAnimation>
+                    <OurValuedPartners />
+                </SectionWithAnimation>
+            </div>
+
+            <div className='py-10 px-7 '>
+                <SectionWithAnimation>
+                    <HaveAnIdea />
+                </SectionWithAnimation>
             </div>
         </div>
     );

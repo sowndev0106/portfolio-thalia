@@ -19,9 +19,14 @@ module.exports = {
           '0%': { transform: 'translateX(0)' },
           '100%': { transform: 'translateX(-100%)' },
         },
+        moveUp: {
+          '0%': { transform: 'translateY(200px)', opacity: '0' },
+          '100%': { transform: 'translateY(0)', opacity: '1' },
+        },
       },
       animation: {
         scroll: 'scroll 20s linear infinite',
+        moveUp: 'moveUp 0.5s ease-out forwards',
       },
     },
   },

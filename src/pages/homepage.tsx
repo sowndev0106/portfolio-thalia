@@ -10,7 +10,7 @@ export default function Homepage() {
             <MainNav />
             <BannerHeader />
             <div className="bg-black" >
-                <div className='bg-center bg-homepage  bg-no-repeat bg-cover p-10  sm:rounded-t-[0px]  md:rounded-t-[100px]  relative z-50'>
+                <div className='bg-center bg-homepage  bg-no-repeat bg-cover sm:rounded-t-[0px]  md:rounded-t-[100px]  relative z-50'>
                     <Expertise />
                 </div>
             </div>

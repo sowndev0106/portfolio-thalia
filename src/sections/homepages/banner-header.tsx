@@ -27,19 +27,19 @@ export default function BannerHeader() {
                 </div>
 
                 <div className=" w-full text-center h-1/2 flex flex-col justify-between items-center pb-16 relative" >
-                    <div className="inline-block mt-5">
-                        <a href="#next-section" className="bg-blue-800 button-circle  p-7 md:p-9 xl:p-9 ">
+                    <div className="inline-block mt-5 animate-bounce">
+                        <a href="#next-section" className="bg-purple bg-opacity-95  button-circle   p-5 md:p-7 xl:p-7 ">
                             <img src="./assets/images/icon/down-arrow.png" alt="Contact" className="inline-block" />
                         </a>
                     </div>
                     <div className="w-full z-20" >
                         <div className='py-10'>
                             <Marquee
-                                loop={1}
+                                loop={0}
                                 autoFill
                             >
                                 {brandingIcons.map((icon, index) => (
-                                    <div className='mr-10'>
+                                    <div className='mr-5 flex justify-center w-[100px] md:w-[200px]'>
                                         <img src={icon.path} alt={icon.url} />
                                     </div>
                                 ))}
@@ -52,8 +52,8 @@ export default function BannerHeader() {
                                 ref={ref} // add reference and events to the wrapping div
                             >
                                 {chipSections.map((chip, index) => (
-                                    <div className={`border border-[${index % 2 == 0 ? '#A074FF80' : '#B6E80280'}]
-                                             button-chip flex items-center    px-10 mr-5 text-white bg-[#FFFFFF1A]    `}>
+                                    <div className={`border ${index % 2 === 0 ? 'border-[#A074FF80]' : 'border-[#B6E80280]'}
+                                             button-chip flex items-center  px-10 mr-5 text-white bg-[#FFFFFF1A]    `}>
                                         <div className='font-size-text-lg '>
                                             {chip.text}
                                         </div>

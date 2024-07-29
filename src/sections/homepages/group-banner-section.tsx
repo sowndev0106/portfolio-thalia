@@ -9,14 +9,16 @@ interface IGroupBannerSectionProps {
     numberRowShowOnMobile?: number
 }
 export default function GroupBannerSection(props: IGroupBannerSectionProps) {
+    const colorCategory = "text-yellow-green"
+
     const numberRowShowOnMobile = (props.numberRowShowOnMobile || props.groupBanners.length) - 1
     return (
         <div >
-            <div className="flex items-center justify-between">
+            <div className="flex items-center justify-between px-2">
                 {/* text title */}
                 <div className=" flex flex-col">
-                    <div className={`font-size-text-sm w-full uppercase  tracking-[4px] md:tracking-[8px] ${props.colorCategory ? `text-${props.colorCategory}` : "text-yellow-green"}`}>{props.category}</div>
-                    <div className=' font-size-text-xl font-bold w-full  text-white'>{props.title}</div>
+                    <div className={`font-size-text-sm w-full uppercase tracking-[4px] md:tracking-[8px] ${colorCategory}`}>{props.category}</div>
+                    <div className=' font-size-text-xl font-bold w-full text-white'>{props.title}</div>
                 </div>
                 {/* button contact */}
                 <div>
@@ -31,7 +33,6 @@ export default function GroupBannerSection(props: IGroupBannerSectionProps) {
                             <GroupBanner {...groupBanner} />
                         </div>
                     ))
-
                 }
             </div>
 

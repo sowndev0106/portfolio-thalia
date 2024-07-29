@@ -44,7 +44,7 @@ function RenderBanner({ banner, key }: { banner: IBanner, key: number }) {
                     ${banner.rounded?.bottomLeft && "rounded-bl-2xl"}
                     ${banner.rounded?.BottomRight && "rounded-br-2xl"}
 
-                    ${banner.borderColor && `border border-${banner.borderColor}`}
+                    ${banner.borderColor && `border border-yellow-green`}
                 `
             } />
         </div>
