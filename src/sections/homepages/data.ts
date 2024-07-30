@@ -83,18 +83,19 @@ export interface IBanner {
     borderColor?: keyof typeof classNameColorSystem;
 }
 export const classNameColorSystem = {
-    purple: "border-purple",
-    yellowGreen: "border-yellow-green",
+    purple: "border-purple border-opacity-60 ",
+    yellowGreen: "border-yellow-green border-opacity-30",
 }
 
 export const gamingCreativeBanners: Array<IGroupBannerProps> = [{
     left: [
+
         {
-            title: "Gaming Creative Banner",
-            image: "./assets/images/banners/gaming-creative-banner-1.png",
-            borderColor: "yellowGreen",
+            title: "Gaming Creative Banner 2",
+            image: "./assets/images/banners/gaming-creative-banner-2.png",
+            borderColor: "purple",
             rounded: {
-                topLeft: true,
+                topRight: true,
                 bottomLeft: true
             }
 
@@ -103,43 +104,43 @@ export const gamingCreativeBanners: Array<IGroupBannerProps> = [{
     ],
     right: [
         {
-            title: "Gaming Creative Banner 2",
-            image: "./assets/images/banners/gaming-creative-banner-2.png",
-            borderColor: "yellowGreen",
-            rounded: {
-                topLeft: true,
-                bottomLeft: true
-            }
-
-        },
-        {
             title: "Gaming Creative Banner 3",
             image: "./assets/images/banners/gaming-creative-banner-3.png",
-            borderColor: "yellowGreen",
+            borderColor: "purple",
             rounded: {
-                topLeft: true,
-                bottomLeft: true
-            }
-        },
-        {
-            title: "Gaming Creative Banner 3",
-            image: "./assets/images/banners/gaming-creative-banner-4.png",
-            borderColor: "yellowGreen",
-            rounded: {
-                topLeft: true,
+                topRight: true,
                 bottomLeft: true
             }
         },
         {
             title: "Gaming Creative Banner 3",
             image: "./assets/images/banners/gaming-creative-banner-5.png",
-            borderColor: "yellowGreen",
+            borderColor: "purple",
             rounded: {
-                topLeft: true,
-                bottomLeft: true,
-                BottomRight: true
+                topRight: true
             }
-        }]
+        },
+
+        {
+            title: "Gaming Creative Banner 3",
+            image: "./assets/images/banners/gaming-creative-banner-4.png",
+            borderColor: "purple",
+            rounded: {
+                topRight: true,
+                bottomLeft: true
+            }
+        },
+        {
+            title: "Gaming Creative Banner",
+            image: "./assets/images/banners/gaming-creative-banner-1.png",
+            borderColor: "purple",
+            rounded: {
+                topRight: true,
+                bottomLeft: true
+            }
+
+        },
+    ]
 }]
 
 export const inGameUXUIBanners: Array<IGroupBannerProps> = [

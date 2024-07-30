@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "https://firebrick-elk-541169.hostingersite.com/static/css/main.c80fc335.css",
+    "main.js": "https://firebrick-elk-541169.hostingersite.com/static/js/main.144d431b.js",
+    "static/js/453.ec1a5a71.chunk.js": "https://firebrick-elk-541169.hostingersite.com/static/js/453.ec1a5a71.chunk.js",
+    "static/media/background-homepage.png": "https://firebrick-elk-541169.hostingersite.com/static/media/background-homepage.ddbd7dc8cb682b40a1da.png",
+    "static/media/bg-header.png": "https://firebrick-elk-541169.hostingersite.com/static/media/bg-header.5cb584aadcddcbfc4b1b.png",
+    "static/media/slick.svg": "https://firebrick-elk-541169.hostingersite.com/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "https://firebrick-elk-541169.hostingersite.com/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "https://firebrick-elk-541169.hostingersite.com/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "https://firebrick-elk-541169.hostingersite.com/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "https://firebrick-elk-541169.hostingersite.com/index.html",
+    "main.c80fc335.css.map": "https://firebrick-elk-541169.hostingersite.com/static/css/main.c80fc335.css.map",
+    "main.144d431b.js.map": "https://firebrick-elk-541169.hostingersite.com/static/js/main.144d431b.js.map",
+    "453.ec1a5a71.chunk.js.map": "https://firebrick-elk-541169.hostingersite.com/static/js/453.ec1a5a71.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c80fc335.css",
+    "static/js/main.144d431b.js"
+  ]
+}
