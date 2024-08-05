@@ -6,7 +6,7 @@ import MainNav from "../sections/nav/main-nav";
 
 export default function Homepage() {
     return (
-        <div className="bg-black" >
+        <div className="bg-black " >
             <MainNav />
             <BannerHeader />
             <div className="bg-black" >

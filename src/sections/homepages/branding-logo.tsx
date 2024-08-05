@@ -1,9 +1,12 @@
-import ChipButton from "../../components/ChipButton";
+import ChipContactButton from "../../components/ChipContactButton";
 import { IBrandingLogo } from "./data";
 
-
+const TextColor = {
+    purple: "text-purple",
+    yellowGreen: "text-yellow-green"
+}
 interface IBrandingLogoProps {
-    colorCategory?: string
+    colorCategory?: keyof typeof TextColor
     category: string
     title: string
     logos: Array<IBrandingLogo>
@@ -13,11 +16,11 @@ export default function BrandingLogo(props: IBrandingLogoProps) {
         <div >
             <div className="flex items-center justify-between">
                 <div className=" flex flex-col">
-                    <div className={`font-size-text-md w-full uppercase tracking-[8px] ${props.colorCategory ? `text-${props.colorCategory}` : "text-yellow-green"}`}>{props.category}</div>
+                    <div className={`font-size-text-md w-full uppercase tracking-[8px] ${props.colorCategory ? `${TextColor[props.colorCategory]}` : "text-yellow-green"}`}>{props.category}</div>
                     <div className=' font-size-text-xl font-bold w-full  text-white'>{props.title}</div>
                 </div>
                 <div>
-                    <ChipButton title="Contact" pathIcon="./assets/images/icon/contact-black.png" />
+                    <ChipContactButton title="Contact" pathIcon="./assets/images/icon/contact-black.png" />
                 </div>
             </div>
             <div className="py-10">

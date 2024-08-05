@@ -1,15 +1,18 @@
-import ChipButton from "../../components/ChipButton";
+import ChipContactButton from "../../components/ChipContactButton";
 import GroupBanner, { IGroupBannerProps } from "../../components/GroupBanner";
-
+const ColorCategory = {
+    purple: "text-purple",
+    yellowGreen: "text-yellow-green"
+}
 interface IGroupBannerSectionProps {
     category: string,
-    colorCategory?: string,
+    colorCategory?: keyof typeof ColorCategory,
     title: string,
     groupBanners: Array<IGroupBannerProps>
     numberRowShowOnMobile?: number
 }
 export default function GroupBannerSection(props: IGroupBannerSectionProps) {
-    const colorCategory = "text-yellow-green"
+    const colorCategory = props.colorCategory ? ColorCategory[props.colorCategory] : "text-yellow-green"
 
     const numberRowShowOnMobile = (props.numberRowShowOnMobile || props.groupBanners.length) - 1
     return (
@@ -22,7 +25,7 @@ export default function GroupBannerSection(props: IGroupBannerSectionProps) {
                 </div>
                 {/* button contact */}
                 <div>
-                    <ChipButton title="Contact" pathIcon="./assets/images/icon/contact-black.png" />
+                    <ChipContactButton title="Contact" pathIcon="./assets/images/icon/contact-black.png" />
                 </div>
             </div>
             {/* slide cards */}

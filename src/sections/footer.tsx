@@ -1,4 +1,4 @@
-import ChipButton from "../components/ChipButton";
+import ChipContactButton from "../components/ChipContactButton";
 import { brandingIcons, IBrandingLogo } from "./homepages/data";
 
 

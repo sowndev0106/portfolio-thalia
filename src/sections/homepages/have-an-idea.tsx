@@ -1,4 +1,4 @@
-import ChipButton from "../../components/ChipButton";
+import ChipContactButton from "../../components/ChipContactButton";
 import { brandingIcons, IBrandingLogo } from "./data";
 
 
@@ -18,7 +18,7 @@ export default function HaveAnIdea(props: IBrandingLogoProps) {
             </div>
             <div className="py-10">
                 <div className="flex justify-center">
-                    <ChipButton title="Free Consultation" pathIcon="/assets/images/icon/calendar.png" />
+                    <ChipContactButton title="Free Consultation" pathIcon="/assets/images/icon/calendar.png" />
 
                 </div>
             </div>

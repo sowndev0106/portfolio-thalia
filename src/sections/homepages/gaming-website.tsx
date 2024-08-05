@@ -1,6 +1,6 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import CardGaming from "../../components/CardGamming";
-import ChipButton from "../../components/ChipButton";
+import ChipContactButton from "../../components/ChipContactButton";
 import { Pagination } from "swiper/modules";
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -8,7 +8,7 @@ import 'swiper/css/pagination';
 export default function GamingWebsite() {
     return (
         <div >
-            <div className="flex items-center justify-between px-8">
+            <div className="flex items-center justify-between px-8 ">
                 {/* text title */}
                 <div className=" flex flex-col">
                     <div className='font-size-text-sm w-full uppercase tracking-[4px] md:tracking-[8px]  text-yellow-green'>GAME INDUSTRY</div>
@@ -16,7 +16,7 @@ export default function GamingWebsite() {
                 </div>#
                 {/* button contact */}
                 <div>
-                    <ChipButton title="Contact" pathIcon="./assets/images/icon/contact-black.png" />
+                    <ChipContactButton title="Contact" pathIcon="./assets/images/icon/contact-black.png" />
                 </div>
             </div>
             {/* slide cards */}
