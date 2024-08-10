@@ -7,7 +7,7 @@ interface IChipContactButton {
     className?: string
     email?: string
 }
-const defaultEmail = "thaliatran161@gmail.com "
+const defaultEmail = "thaliatran161@gmail.com"
 function ChipContactButton(props: IChipContactButton) {
     const mailTo = `mailto:${props.email || defaultEmail} `
     return (

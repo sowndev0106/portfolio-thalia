@@ -22,9 +22,15 @@ export default function Footer(props: IBrandingLogoProps) {
 
                         {/* Social icon */}
                         <div className="flex items-center justify-center gap-5 align-bottom md:mb-[-50px]">
-                            <img src={"./assets/images/icon/footer_be.svg"} alt="mail" className="h-8" />
-                            <img src={"./assets/images/icon/footer_linkedin.svg"} alt="mail" className="h-8" />
-                            <img src={"./assets/images/icon/footer_mail.svg"} alt="mail" className="h-8" />
+                            <a href="mailto:thaliatran161@gmail.com" target="_blank">
+                                <img src={"./assets/images/icon/footer_be.svg"} alt="mail" className="h-8" />
+                            </a>
+                            <a href="https://www.linkedin.com/in/thaliatran294/" target="_blank">
+                                <img src={"./assets/images/icon/footer_linkedin.svg"} alt="mail" className="h-8" />
+                            </a>
+                            <a href="https://www.behance.net/thaliatran" target="_blank">
+                                <img src={"./assets/images/icon/footer_mail.svg"} alt="mail" className="h-8" />
+                            </a>
                         </div>
                     </div>
 
