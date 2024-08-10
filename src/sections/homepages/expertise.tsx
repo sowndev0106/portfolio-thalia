@@ -17,60 +17,60 @@ const SectionWithAnimation = ({ children }: any) => {
 
 export default function Expertise() {
     return (
-        <div className='mx-auto container  pt-10'>
+        <div className='mx-auto container  pt-10 scroll-smooth' >
             <div className='font-size-text-2xl font-bold w-full text-center text-yellow-green'>Our Expertise</div>
-            <div className='py-10 scroll-tag' id="game-industry" >
+            <div className='pt-20 scroll-mt-20' id="game-industry" >
                 <SectionWithAnimation>
                     <GamingWebsite />
                 </SectionWithAnimation>
             </div>
 
-            <div className='py-10 px-7 ' >
+            <div className='pt-20 px-7 ' >
                 <SectionWithAnimation>
                     <GroupBannerSection groupBanners={gamingCreativeBanners} title='Gaming Creative Banner' category='GAME INDUSTRY' />
                 </SectionWithAnimation>
             </div>
 
-            <div className='py-10 px-7  '>
+            <div className='pt-20 px-7  '>
                 <SectionWithAnimation>
                     <GroupBannerSection groupBanners={inGameUXUIBanners} title='In-game UI/UX' category='GAME INDUSTRY' numberRowShowOnMobile={1} />
                 </SectionWithAnimation>
             </div>
 
-            <div className='py-10 px-7 ' id="blockchain" >
+            <div className='pt-20 px-7  scroll-mt-20 ' id="blockchain" >
                 <SectionWithAnimation>
                     <GroupBannerSection groupBanners={web3Banners} title='Web3' category='BLOCKCHAIN' colorCategory='purple' />
                 </SectionWithAnimation>
             </div>
 
-            <div className='py-10 px-7 '>
+            <div className='pt-20 px-7 '>
                 <SectionWithAnimation>
                     <GroupBannerSection groupBanners={gameFiBanners} title='GameFi' category='BLOCKCHAIN' colorCategory='purple' />
                 </SectionWithAnimation>
             </div>
 
 
-            <div className='py-10 px-7 ' id="branding">
+            <div className='pt-20 px-7  scroll-mt-20' id="branding">
                 <SectionWithAnimation>
                     <LogoBranding logos={brandingLogos} title='Logo branding' category='Branding' colorCategory='purple' />
                 </SectionWithAnimation>
             </div>
 
 
-            <div className='py-10 px-7 '>
+            <div className='pt-20 px-7 '>
                 <SectionWithAnimation>
                     <GroupBannerSection groupBanners={brandingGuidelineBanners} title='Brand Guideline' category='Branding' />
                 </SectionWithAnimation>
             </div>
 
 
-            <div className='py-10 px-7 ' id="about-us">
+            <div className='pt-20 px-7  scroll-mt-20' id="about-us">
                 <SectionWithAnimation>
                     <OurValuedPartners />
                 </SectionWithAnimation>
             </div>
 
-            <div className='py-10 px-7 '>
+            <div className='pt-20 px-7 '>
                 <SectionWithAnimation>
                     <HaveAnIdea />
                 </SectionWithAnimation>
