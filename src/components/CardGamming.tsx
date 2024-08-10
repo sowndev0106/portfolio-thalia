@@ -6,7 +6,7 @@ interface ICardGamingProps {
 }
 export default function CardGaming(props: ICardGamingProps) {
     return (
-        <div>
+        <a href={props.url || "#"} target="_blank">
             <div className="w-full rounded-xl p-2 border border-yellow-green border-opacity-50 " >
                 <div className="p-3 flex items-center justify-between">
                     <div className="font-size-text-sm font-bold text-white">
@@ -21,11 +21,11 @@ export default function CardGaming(props: ICardGamingProps) {
                 </div>
             </div>
             <div className={`mt-5 font-size-text-md underline underline-offset-2 `}>
-                <a href={props.url || "#"} className={`${props.url ? "text-yellow-green" : "text-[#787777]"} flex items-center`}>
+                <a href={props.url || "#"} className={`${props.url ? "text-yellow-green" : "text-[#787777]"} flex items-center`} target="_blank">
                     <div> View live website </div>
                     <img src={`${props.url ? "./assets/images/icon/up-arrow.svg" : "./assets/images/icon/up-arrow-gray.png"} `} alt="Contact" className="ml-1 w-[20px] h-[20px]" />
                 </a>
             </div>
-        </div>
+        </a>
     );
 }

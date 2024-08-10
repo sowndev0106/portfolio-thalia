@@ -26,9 +26,9 @@ export default function BannerHeader() {
                     </h1>
                 </div>
 
-                <div className=" w-full text-center h-1/2 flex flex-col justify-between items-center pb-16 relative" >
+                <div className=" w-full text-center h-1/2 flex flex-col justify-between items-center pb-16 relative z-50" >
                     <div className="inline-block mt-14 animate-bounce">
-                        <a href="#next-section" className="bg-[#601FEB] button-circle   p-5 md:p-7 xl:p-7 ">
+                        <a href="#our-expertise" className="bg-[#601FEB] button-circle p-5 md:p-7 xl:p-7 ">
                             <img src="./assets/images/icon/down-arrow.png" alt="Contact" className="inline-block" />
                         </a>
                     </div>
@@ -39,7 +39,7 @@ export default function BannerHeader() {
                                 autoFill
                             >
                                 {brandingIcons.map((icon, index) => (
-                                    <div className='mr-5 flex justify-center w-[100px] md:w-[200px]'>
+                                    <div className='mr-10 flex justify-center '>
                                         <img src={icon.path} alt={icon.url} />
                                     </div>
                                 ))}
@@ -53,7 +53,7 @@ export default function BannerHeader() {
                             >
                                 {chipSections.map((chip, index) => (
                                     <div className={`border ${index % 2 === 0 ? 'border-[#A074FF80]' : 'border-[#B6E80280]'}
-                                             button-chip flex items-center  px-10 mr-5 text-white bg-[#FFFFFF1A]    `}>
+                                             button-chip flex items-center  px-10 mr-5 text-white bg-[#FFFFFF1A]  cursor-grabbing  `}>
                                         <div className='font-size-text-lg '>
                                             {chip.text}
                                         </div>

@@ -40,13 +40,13 @@ export default function GamingWebsite() {
                     className="root-swiper"
                 >
                     <SwiperSlide >
-                        <CardGaming image="./assets/images/banners/gamming-website-4.png" title="Disney Speedstorm" url="https://disneyspeedstorm.com/" />
+                        <CardGaming image="./assets/images/banners/gamming-website-4.png" title="Disney Speedstorm" url="https://www.behance.net/gallery/190730687/Gaming-Website-UIUX-Design-Disney-Speedstorm" />
                     </SwiperSlide>
                     <SwiperSlide >
-                        <CardGaming image="./assets/images/banners/gamming-website-1.png" title="Disney Magic Kingdom" url="https://www.disney-magic-kingdoms.com/" />
+                        <CardGaming image="./assets/images/banners/gamming-website-1.png" title="Disney Magic Kingdom" url="https://www.behance.net/gallery/190721493/Gaming-Website-UIUX-Design-Disney-Magic-Kingdoms" />
                     </SwiperSlide>
                     <SwiperSlide >
-                        <CardGaming image="./assets/images/banners/gamming-website-2.png" title="Clash of clans" />
+                        <CardGaming image="./assets/images/banners/gamming-website-2.png" title="Clash of clans" url="https://www.behance.net/gallery/187028411/Gaming-Website-Design-Clash-of-Clans-Website-Revamp" />
                     </SwiperSlide>
                     <SwiperSlide >
                         <CardGaming image="./assets/images/banners/gamming-website-3.png" title="Asphalts Legend Unite" url="https://asphaltlegendsunite.com/" />

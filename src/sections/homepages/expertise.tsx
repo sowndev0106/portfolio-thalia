@@ -17,7 +17,7 @@ const SectionWithAnimation = ({ children }: any) => {
 
 export default function Expertise() {
     return (
-        <div className='mx-auto container  pt-10 scroll-smooth' >
+        <div className='mx-auto container  pt-10 scroll-smooth  scroll-mt-20 ' id="our-expertise"  >
             <div className='font-size-text-2xl font-bold w-full text-center text-yellow-green'>Our Expertise</div>
             <div className='pt-20 scroll-mt-20' id="game-industry" >
                 <SectionWithAnimation>
@@ -39,20 +39,20 @@ export default function Expertise() {
 
             <div className='pt-20 px-7  scroll-mt-20 ' id="blockchain" >
                 <SectionWithAnimation>
-                    <GroupBannerSection groupBanners={web3Banners} title='Web3' category='BLOCKCHAIN' colorCategory='purple' />
+                    <GroupBannerSection groupBanners={web3Banners} title='Web3' category='BLOCKCHAIN' />
                 </SectionWithAnimation>
             </div>
 
             <div className='pt-20 px-7 '>
                 <SectionWithAnimation>
-                    <GroupBannerSection groupBanners={gameFiBanners} title='GameFi' category='BLOCKCHAIN' colorCategory='purple' />
+                    <GroupBannerSection groupBanners={gameFiBanners} title='GameFi' category='BLOCKCHAIN' />
                 </SectionWithAnimation>
             </div>
 
 
             <div className='pt-20 px-7  scroll-mt-20' id="branding">
                 <SectionWithAnimation>
-                    <LogoBranding logos={brandingLogos} title='Logo branding' category='Branding' colorCategory='purple' />
+                    <LogoBranding logos={brandingLogos} title='Logo branding' category='Branding' />
                 </SectionWithAnimation>
             </div>
 
