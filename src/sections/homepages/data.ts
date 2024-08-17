@@ -150,7 +150,7 @@ export const inGameUXUIBanners: Array<IGroupBannerProps> = [
             {
                 title: "Gaming Creative Banner",
                 image: "./assets/images/banners/in-game-uxui-1.png",
-                borderColor: "yellowGreen",
+                borderColor: "purple",
                 rounded: {
                     topRight: true,
                     bottomLeft: true
@@ -163,7 +163,7 @@ export const inGameUXUIBanners: Array<IGroupBannerProps> = [
             {
                 title: "Gaming Creative Banner 2",
                 image: "./assets/images/banners/in-game-uxui-2.png",
-                borderColor: "yellowGreen",
+                borderColor: "purple",
                 rounded: {
                     topRight: true,
                     bottomLeft: true
@@ -173,7 +173,7 @@ export const inGameUXUIBanners: Array<IGroupBannerProps> = [
             {
                 title: "Gaming Creative Banner 3",
                 image: "./assets/images/banners/in-game-uxui-5.png",
-                borderColor: "yellowGreen",
+                borderColor: "purple",
                 rounded: {
                     topRight: true,
                     bottomLeft: true
@@ -182,7 +182,7 @@ export const inGameUXUIBanners: Array<IGroupBannerProps> = [
             {
                 title: "Gaming Creative Banner 3",
                 image: "./assets/images/banners/in-game-uxui-9.png",
-                borderColor: "yellowGreen",
+                borderColor: "purple",
                 rounded: {
                     topRight: true,
                     bottomLeft: true
@@ -191,7 +191,7 @@ export const inGameUXUIBanners: Array<IGroupBannerProps> = [
             {
                 title: "Gaming Creative Banner 3",
                 image: "./assets/images/banners/in-game-uxui-7.png",
-                borderColor: "yellowGreen",
+                borderColor: "purple",
                 rounded: {
                     topRight: true,
                     bottomLeft: true,
@@ -204,7 +204,7 @@ export const inGameUXUIBanners: Array<IGroupBannerProps> = [
             {
                 title: "Gaming Creative Banner",
                 image: "./assets/images/banners/in-game-uxui-3.png",
-                borderColor: "yellowGreen",
+                borderColor: "purple",
                 rounded: {
                     topRight: true,
                     bottomLeft: true
@@ -217,7 +217,7 @@ export const inGameUXUIBanners: Array<IGroupBannerProps> = [
             {
                 title: "Gaming Creative Banner 2",
                 image: "./assets/images/banners/in-game-uxui-8.png",
-                borderColor: "yellowGreen",
+                borderColor: "purple",
                 rounded: {
                     topRight: true,
                     bottomLeft: true
@@ -227,7 +227,7 @@ export const inGameUXUIBanners: Array<IGroupBannerProps> = [
             {
                 title: "Gaming Creative Banner 3",
                 image: "./assets/images/banners/in-game-uxui-6.png",
-                borderColor: "yellowGreen",
+                borderColor: "purple",
                 rounded: {
                     topRight: true,
                     bottomLeft: true
@@ -236,7 +236,7 @@ export const inGameUXUIBanners: Array<IGroupBannerProps> = [
             {
                 title: "Gaming Creative Banner 3",
                 image: "./assets/images/banners/in-game-uxui-4.png",
-                borderColor: "yellowGreen",
+                borderColor: "purple",
                 rounded: {
                     topRight: true,
                     bottomLeft: true
@@ -245,7 +245,7 @@ export const inGameUXUIBanners: Array<IGroupBannerProps> = [
             {
                 title: "Gaming Creative Banner 3",
                 image: "./assets/images/banners/in-game-uxui-10.png",
-                borderColor: "yellowGreen",
+                borderColor: "purple",
                 rounded: {
                     topRight: true,
                     bottomLeft: true,

@@ -19,7 +19,7 @@ export default function MainNav() {
 
 
     return (
-        <nav className="fixed z-[100] text-white w-full py-4 shadow-[0px_1px_0px_0px_#FFFFFF40] bg-opacity-80 bg-black">
+        <nav className="fixed z-50 text-white w-full py-4 shadow-[0px_1px_0px_0px_#FFFFFF40] bg-opacity-80 bg-black backdrop-blur-md">
             <div className="container mx-auto flex justify-between items-center">
                 {/* Logo */}
                 <a className="font-bold ml-5" href="/">
