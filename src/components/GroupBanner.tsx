@@ -26,11 +26,11 @@ export default function GroupBanner({ left, right }: IGroupBannerProps) {
         <div>
             <ModalBanner image={image} isOpen={isOpen} onClose={handleClose} />
 
-            <div className="w-full h-full rounded-xl p-2  " >
+            <div className="w-full rounded-xl p-2  " >
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div>
 
-                        <div className={`grid grid-cols-${left?.length ? left?.length / 2 : 1} gap-4 h-full`}>
+                        <div className={`grid grid-cols-${left?.length ? left?.length / 2 : 1} gap-4 `}>
                             {
                                 left?.map((banner, index) => (
                                     <RenderBanner banner={banner} key={`left-${index}`} onClick={() => {
@@ -41,7 +41,7 @@ export default function GroupBanner({ left, right }: IGroupBannerProps) {
                         </div>
                     </div>
                     <div>
-                        <div className={`grid grid-cols-${right?.length ? right?.length / 2 : 1} gap-4 h-full`}>
+                        <div className={`grid grid-cols-${right?.length ? right?.length / 2 : 1} gap-4 `}>
                             {
                                 right?.map((banner, index) => (
                                     <RenderBanner banner={banner} key={`right-${index}`} onClick={() => {
@@ -61,11 +61,11 @@ export default function GroupBanner({ left, right }: IGroupBannerProps) {
 function RenderBanner({ banner, key, onClick }: { banner: IBanner, key: string, onClick: () => void }) {
 
     return (
-        <div className="relative cursor-pointer" key={key}>
+        <div className="relative cursor-pointer" key={key} >
             <img src={banner.image} alt={banner.title}
                 onClick={onClick}
                 className={
-                    ` object-cover  sm:h-full 
+                    `object-cover 
                     hover:border-yellow-green  hover:border-opacity-60
                     ${banner.rounded?.topLeft && "rounded-tl-xl"}
                     ${banner.rounded?.topRight && "rounded-tr-xl"}
