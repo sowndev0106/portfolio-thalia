@@ -26,7 +26,7 @@ export default function BannerHeader() {
                     </h1>
                 </div>
 
-                <div className=" w-full text-center h-1/2 flex flex-col justify-between items-center pb-16 relative z-50" >
+                <div className=" w-full text-center h-1/2 flex flex-col justify-between items-center pb-16 relative z-20" >
                     <div className="inline-block mt-14 animate-bounce">
                         <a href="#our-expertise" className="bg-[#601FEB] button-circle p-5 md:p-7 xl:p-7 ">
                             <img src="./assets/images/icon/down-arrow.png" alt="Contact" className="inline-block" />
