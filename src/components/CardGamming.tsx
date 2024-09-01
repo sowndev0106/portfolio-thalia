@@ -3,6 +3,7 @@ interface ICardGamingProps {
     title: string;
     image: string;
     url?: string;
+    urlProject?: string;
 }
 export default function CardGaming(props: ICardGamingProps) {
     return (
@@ -21,9 +22,13 @@ export default function CardGaming(props: ICardGamingProps) {
                 </div>
             </div>
             <div className={`mt-5 font-size-text-md underline underline-offset-2 `}>
-                <a href={props.url || "#"} className={`${props.url ? "text-yellow-green" : "text-[#787777]"} flex items-center`} target="_blank">
+                 <a href={props.urlProject || "#"} className={`${props.urlProject ? "text-yellow-green" : "hidden"} flex items-center mb-2`} target="_blank">
+                    <div> View project </div>
+                    <img src={`${props.urlProject ? "./assets/images/icon/up-arrow.svg" : "./assets/images/icon/up-arrow-gray.png"} `} alt="Contact" className="ml-1 w-[20px] h-[20px] " />
+                </a>
+                <a href={props.url || "#"} className={`${props.url ? "text-[#9360FF]" : "hidden"} flex items-center`} target="_blank">
                     <div> View live website </div>
-                    <img src={`${props.url ? "./assets/images/icon/up-arrow.svg" : "./assets/images/icon/up-arrow-gray.png"} `} alt="Contact" className="ml-1 w-[20px] h-[20px]" />
+                    <img src={`${props.url ? "./assets/images/icon/up-arrow-p.svg" : "./assets/images/icon/up-arrow-gray.png"} `} alt="Contact" className="ml-1 w-[12px] h-[12px]" />
                 </a>
             </div>
         </a>
