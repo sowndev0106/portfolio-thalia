@@ -8,7 +8,7 @@ import 'swiper/css/pagination';
 export default function GamingWebsite() {
     return (
         <div >
-            <div className="flex items-center justify-between ">
+            <div className="flex items-center justify-between mx-5 sm:mx-0 ">
                 {/* text title */}
                 <div className=" flex flex-col">
                     <div className='font-size-text-sm w-full uppercase tracking-[4px] md:tracking-[8px]  text-yellow-green'>GAME INDUSTRY</div>
