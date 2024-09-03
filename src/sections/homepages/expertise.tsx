@@ -25,52 +25,52 @@ export default function Expertise() {
                 </SectionWithAnimation>
             </div>
 
-            <div className='pt-20 px-7 ' >
+            <div className='pt-20' >
                 <SectionWithAnimation>
                     <GroupBannerSection groupBanners={gamingCreativeBanners} title='Gaming Creative Banner' category='GAME INDUSTRY' />
                 </SectionWithAnimation>
             </div>
 
-            <div className='pt-20 px-7  '>
+            <div className='pt-20 '>
                 <SectionWithAnimation>
                     <GroupBannerSection groupBanners={inGameUXUIBanners} title='In-game UI/UX' category='GAME INDUSTRY' numberRowShowOnMobile={1} />
                 </SectionWithAnimation>
             </div>
 
-            <div className='pt-20 px-7  scroll-mt-20 ' id="blockchain" >
+            <div className='pt-20 scroll-mt-20 ' id="blockchain" >
                 <SectionWithAnimation>
                     <GroupBannerSection groupBanners={web3Banners} title='Web3' category='BLOCKCHAIN' />
                 </SectionWithAnimation>
             </div>
 
-            <div className='pt-20 px-7 '>
+            <div className='pt-20'>
                 <SectionWithAnimation>
                     <GroupBannerSection groupBanners={gameFiBanners} title='GameFi' category='BLOCKCHAIN' />
                 </SectionWithAnimation>
             </div>
 
 
-            <div className='pt-20 px-7  scroll-mt-20' id="branding">
+            <div className='pt-20 scroll-mt-20' id="branding">
                 <SectionWithAnimation>
                     <LogoBranding logos={brandingLogos} title='Logo branding' category='Branding' />
                 </SectionWithAnimation>
             </div>
 
 
-            <div className='pt-20 px-7 '>
+            <div className='pt-20'>
                 <SectionWithAnimation>
                     <GroupBannerSection groupBanners={brandingGuidelineBanners} title='Brand Guideline' category='Branding' />
                 </SectionWithAnimation>
             </div>
 
 
-            <div className='pt-20 px-7  scroll-mt-20' id="about-us">
+            <div className='pt-20 scroll-mt-20' id="about-us">
                 <SectionWithAnimation>
                     <OurValuedPartners />
                 </SectionWithAnimation>
             </div>
 
-            <div className='pt-20 px-7 '>
+            <div className='pt-20'  id="contact-form">
                 <SectionWithAnimation>
                     <HaveAnIdea />
                 </SectionWithAnimation>

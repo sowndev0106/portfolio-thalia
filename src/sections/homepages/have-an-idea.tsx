@@ -17,9 +17,12 @@ export default function HaveAnIdea(props: IBrandingLogoProps) {
 
             </div>
             <div className="py-10">
-                <div className="flex justify-center">
-                    <ChipContactButton title="Free Consultation" pathIcon="/assets/images/icon/calendar.png" />
-
+                <div className="flex justify-center ">
+                    {/* <ChipContactButton title="Free Consultation" pathIcon="/assets/images/icon/calendar.png" /> */}
+                  <div className="w-full max-w-3xl">
+                  <iframe src="https://tally.so/embed/n9vqxp?alignLeft=1&hideTitle=1&transparentBackground=1" 
+                     className="w-full h-[450px] "/>
+                  </div>
                 </div>
             </div>
         </div>
