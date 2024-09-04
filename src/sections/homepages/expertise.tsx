@@ -18,7 +18,7 @@ const SectionWithAnimation = ({ children }: any) => {
 export default function Expertise() {
     return (
         <div className='mx-auto container  pt-10 scroll-smooth  scroll-mt-20 ' id="our-expertise"  >
-            <div className='font-size-text-2xl font-bold w-full text-center text-yellow-green test'>Our Expertise</div>
+            <div className='font-size-text-2xl font-bold w-full text-center text-yellow-green'>Our Expertise</div>
             <div className='pt-20 mx-5 sm:mx-0  scroll-mt-20' id="game-industry" >
                 <SectionWithAnimation>
                     <GamingWebsite />
