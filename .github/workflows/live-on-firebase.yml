@@ -6,6 +6,14 @@ on:
   push:
     branches:
       - master
+  pull_request:
+    branches:
+      - master
+permissions:
+  checks: write
+  contents: read
+  pull-requests: write
+  
 jobs:
   build_and_deploy:
     runs-on: ubuntu-latest
