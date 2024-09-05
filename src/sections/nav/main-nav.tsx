@@ -1,12 +1,15 @@
 import { useEffect, useState } from "react";
 import ChipContactButton from "../../components/ChipContactButton";
-
+import ReactGA from "react-ga4";
 export default function MainNav() {
     const [isOpen, setIsOpen] = useState(false);
     const [tag, setTag] = useState('');
 
     useEffect(() => {
-        const updateTag = () => setTag(window.location.hash.substring(1));
+        const updateTag = () =>{
+            setTag(window.location.hash.substring(1)); // Get the tag from the URL
+            ReactGA.send({ hitType: "pageview", page: `${window.location.pathname}${window.location.hash}`, title: "Nav bar" });
+        };
         updateTag(); // Set the initial tag
         window.addEventListener("hashchange", updateTag); // Listen for hash changes
 
