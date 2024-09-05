@@ -5,6 +5,7 @@ import { toast } from "react-toastify";
 
 export default function HaveAnIdea() {
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
   const [formData, setFormData] = useState({
     email: "",
     subject: "",
@@ -30,6 +31,7 @@ export default function HaveAnIdea() {
 
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
+    setIsLoading(true);
     try {
       // @ts-ignore
       const token = await grecaptcha.execute(
@@ -55,6 +57,8 @@ export default function HaveAnIdea() {
       }
     } catch (error) {
       toast.error("An error occurred. Please try again later.");
+    } finally {
+      setIsLoading(false);
     }
   };
 
@@ -81,7 +85,7 @@ export default function HaveAnIdea() {
       </div>
 
       {isSubmitted ? (
-        <div className="text-center text-white">
+        <div className="text-center text-white mb-4">
           <h2 className="text-2xl font-bold mb-4">
             Thank you for your message!
           </h2>
@@ -113,7 +117,7 @@ export default function HaveAnIdea() {
             onChange={handleInputChange}
           />
           <div className="flex justify-center items-center">
-            <button type="submit">
+            <button type="submit" disabled={isLoading}>
               <ChipContactButton
                 title="Send"
                 pathIcon="./assets/images/icon/contact-black.png"
