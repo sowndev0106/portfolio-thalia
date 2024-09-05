@@ -41,7 +41,7 @@ export default function HaveAnIdea() {
         "https://cms.thaliatrandesign.com/api/contact-forms/submit",
         new URLSearchParams({
           ...formData,
-          //   googleCaptcha: token,
+          googleCaptcha: token,
         }),
         {
           headers: { "Content-Type": "application/x-www-form-urlencoded" },
