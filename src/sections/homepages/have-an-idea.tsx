@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import ChipContactButton from "../../components/ChipContactButton";
 import axios from "axios";
 import { toast } from "react-toastify";
-
+import ChipLink from "../../components/ChipLink";
 export default function HaveAnIdea() {
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
@@ -63,7 +63,7 @@ export default function HaveAnIdea() {
   };
 
   return (
-    <div className="flex items-center justify-between flex-col">
+    <div className="pb-20 flex items-center justify-between flex-col">
       <div className="flex items-center justify-between flex-col mb-10">
         <div
           className={`font-size-text-2xl font-bold  mb-2  text-center  text-white`}
@@ -86,46 +86,62 @@ export default function HaveAnIdea() {
 
       {isSubmitted ? (
         <div className="text-center text-white mb-4">
-          <h2 className="text-2xl font-bold mb-4">
+          <h2 className="text-2xl font-bold mb-4 text-yellow-green">
             Thank you for your message!
           </h2>
-          <p>We'll get back to you soon.</p>
+          <p className=" text-white text-opacity-80">We'll get back to you soon.</p>
         </div>
       ) : (
-        <form onSubmit={handleSubmit} className="space-y-4 w-full max-w-4xl">
-          <input
-            type="email"
-            name="email"
-            placeholder="Email*"
-            required
-            className="w-full p-3 px-5 bg-white/15 rounded-2xl border border-white/50 text-white md:text-2xl"
-            onChange={handleInputChange}
-          />
+        <form onSubmit={handleSubmit} className="space-y-4 w-full max-w-4xl  ">
+          <div className="">
+            <input
+              type="email"
+              name="email"
+              placeholder="Email*"
+              required
+              className="w-full p-3 px-5 rounded-2xl  bg-white bg-opacity-10 backdrop-blur-md  border border-white/50 text-white font-size-text-md"
+              onChange={handleInputChange}
+            />
+          </div>
           <input
             type="text"
             name="subject"
             placeholder="Subject*"
             required
-            className="w-full p-3 px-5 bg-white/15 rounded-2xl border border-white/50 text-white md:text-2xl"
+            className="w-full p-3 px-5 rounded-2xl bg-white bg-opacity-10 backdrop-blur-md border border-white/50 text-white font-size-text-md"
             onChange={handleInputChange}
           />
           <textarea
             name="message"
             placeholder="Type your message here..."
             required
-            className="w-full p-3 px-5 bg-white/15 rounded-2xl h-32 border border-white/50 text-white md:text-2xl"
+            className="w-full p-3 px-5 rounded-2xl bg-white bg-opacity-10 backdrop-blur-md  h-52 border border-white/50 text-white font-size-text-md"
             onChange={handleInputChange}
           />
           <div className="flex justify-center items-center">
             <button type="submit" disabled={isLoading}>
-              <ChipContactButton
+              {
+                isLoading ? 
+                <ChipLink
+                title="Sending..."
+                bgColor="bgYellowGreen"
+              />  
+              :
+                <ChipLink
                 title="Send"
                 pathIcon="./assets/images/icon/contact-black.png"
-              />
+                bgColor="bgYellowGreen"
+              /> 
+              }
+              
             </button>
+           
           </div>
         </form>
       )}
+
+
+
     </div>
   );
 }

@@ -45,3 +45,8 @@
 .root-swiper {
     @apply pb-16 !important
 }
+
+/* hidden recaptcha icon */
+.grecaptcha-badge {
+    @apply hidden;
+}
