@@ -93,13 +93,16 @@ export default function HaveAnIdea() {
         </div>
       ) : (
         <form onSubmit={handleSubmit} className="space-y-4 w-full max-w-4xl  ">
-          <div className="">
+          <div className=" "          >
             <input
               type="email"
               name="email"
               placeholder="Email*"
               required
-              className="w-full p-3 px-5 rounded-2xl  bg-white bg-opacity-10 backdrop-blur-md  border border-white/50 text-white font-size-text-md"
+              className="w-full p-3 px-5 rounded-2xl  border border-white/50 text-white font-size-text-md
+            backdrop-filter bg-opacity-10 bg-white backdrop-blur-md
+              "
+             
               onChange={handleInputChange}
             />
           </div>
@@ -108,14 +111,17 @@ export default function HaveAnIdea() {
             name="subject"
             placeholder="Subject*"
             required
-            className="w-full p-3 px-5 rounded-2xl bg-white bg-opacity-10 backdrop-blur-md border border-white/50 text-white font-size-text-md"
+            className="w-full p-3 px-5 rounded-2xl border border-white/50 text-white font-size-text-md
+           backdrop-filter bg-opacity-10 bg-white backdrop-blur-md
+            "
             onChange={handleInputChange}
           />
           <textarea
             name="message"
             placeholder="Type your message here..."
             required
-            className="w-full p-3 px-5 rounded-2xl bg-white bg-opacity-10 backdrop-blur-md  h-52 border border-white/50 text-white font-size-text-md"
+            className="w-full p-3 px-5 rounded-2xl h-52 border border-white/50 text-white font-size-text-md
+           backdrop-filter bg-opacity-10 bg-white backdrop-blur-md"
             onChange={handleInputChange}
           />
           <div className="flex justify-center items-center">
