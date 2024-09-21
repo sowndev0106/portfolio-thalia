@@ -1,30 +1,153 @@
+import { useEffect, useState } from "react";
 import ChipContactButton from "../../components/ChipContactButton";
-import { brandingIcons, IBrandingLogo } from "./data";
+import axios from "axios";
+import { toast } from "react-toastify";
+import ChipLink from "../../components/ChipLink";
+export default function HaveAnIdea() {
+  const [isSubmitted, setIsSubmitted] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
+  const [formData, setFormData] = useState({
+    email: "",
+    subject: "",
+    message: "",
+  });
 
+  useEffect(() => {
+    // Load Google reCAPTCHA v3 script
+    const script = document.createElement("script");
+    script.src = `https://www.google.com/recaptcha/api.js?render=6LfUTDMqAAAAAFXKLqBvd2-Caz80ukKnq3au9KhX`;
+    document.body.appendChild(script);
 
-interface IBrandingLogoProps {
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
 
-}
-export default function HaveAnIdea(props: IBrandingLogoProps) {
-    return (
-        <div >
-            <div className="flex items-center justify-between flex-col">
-                <div className={`font-size-text-2xl font-bold  mb-2  text-center  text-white`}>Have an idea? Let’s talk.</div>
+  const handleInputChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
 
-                <div className={` text-white text-[14px] text-center  md:text-[22px] text-opacity-80`}>Visually attractive design from concept to final result. </div>
+  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    setIsLoading(true);
+    try {
+      // @ts-ignore
+      const token = await grecaptcha.execute(
+        "6LfUTDMqAAAAAFXKLqBvd2-Caz80ukKnq3au9KhX",
+        { action: "submit" }
+      );
 
-                <div className={` text-white text-[14px] text-center  md:text-[22px] text-opacity-80`}>We create solutions that are bold and forward-looking.</div>
+      const response = await axios.post(
+        "https://cms.thaliatrandesign.com/api/contact-forms/submit",
+        new URLSearchParams({
+          ...formData,
+          googleCaptcha: token,
+        }),
+        {
+          headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        }
+      );
 
-            </div>
-            <div className="py-10">
-                <div className="flex justify-center ">
-                    {/* <ChipContactButton title="Free Consultation" pathIcon="/assets/images/icon/calendar.png" /> */}
-                  <div className="w-full max-w-3xl">
-                  <iframe src="https://tally.so/embed/n9vqxp?alignLeft=1&hideTitle=1&transparentBackground=1" 
-                     className="w-full h-[450px] "/>
-                  </div>
-                </div>
-            </div>
+      if (response.status === 200) {
+        setIsSubmitted(true);
+      } else {
+        throw new Error("Submission failed");
+      }
+    } catch (error) {
+      toast.error("An error occurred. Please try again later.");
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
+  return (
+    <div className="pb-20 flex items-center justify-between flex-col">
+      <div className="flex items-center justify-between flex-col mb-10">
+        <div
+          className={`font-size-text-2xl font-bold  mb-2  text-center  text-white`}
+        >
+          Have an idea? Let's talk.
         </div>
-    );
+
+        <div
+          className={` text-white text-[14px] text-center  md:text-[22px] text-opacity-80`}
+        >
+          Visually attractive design from concept to final result.{" "}
+        </div>
+
+        <div
+          className={` text-white text-[14px] text-center  md:text-[22px] text-opacity-80`}
+        >
+          We create solutions that are bold and forward-looking.
+        </div>
+      </div>
+
+      {isSubmitted ? (
+        <div className="text-center text-white mb-4">
+          <h2 className="text-2xl font-bold mb-4 text-yellow-green">
+            Thank you for your message!
+          </h2>
+          <p className=" text-white text-opacity-80">We'll get back to you soon.</p>
+        </div>
+      ) : (
+        <form onSubmit={handleSubmit} className="space-y-4 w-full max-w-4xl  ">
+          <div className=" "          >
+            <input
+              type="email"
+              name="email"
+              placeholder="Email*"
+              required
+              className="w-full p-3 px-5 rounded-2xl  border border-white/50 text-white font-size-text-md
+            backdrop-filter bg-opacity-10 bg-white backdrop-blur-md
+              "
+             
+              onChange={handleInputChange}
+            />
+          </div>
+          <input
+            type="text"
+            name="subject"
+            placeholder="Subject*"
+            required
+            className="w-full p-3 px-5 rounded-2xl border border-white/50 text-white font-size-text-md
+           backdrop-filter bg-opacity-10 bg-white backdrop-blur-md
+            "
+            onChange={handleInputChange}
+          />
+          <textarea
+            name="message"
+            placeholder="Type your message here..."
+            required
+            className="w-full p-3 px-5 rounded-2xl h-52 border border-white/50 text-white font-size-text-md
+           backdrop-filter bg-opacity-10 bg-white backdrop-blur-md"
+            onChange={handleInputChange}
+          />
+          <div className="flex justify-center items-center">
+            <button type="submit" disabled={isLoading}>
+              {
+                isLoading ? 
+                <ChipLink
+                title="Sending..."
+                bgColor="bgYellowGreen"
+              />  
+              :
+                <ChipLink
+                title="Send"
+                pathIcon="./assets/images/icon/contact-black.png"
+                bgColor="bgYellowGreen"
+              /> 
+              }
+              
+            </button>
+           
+          </div>
+        </form>
+      )}
+
+
+
+    </div>
+  );
 }

@@ -20,7 +20,6 @@ export default function MainNav() {
         setIsOpen(!isOpen);
     };
 
-
     return (
         <nav className="fixed z-50 text-white w-full py-4 shadow-[0px_1px_0px_0px_#FFFFFF40] bg-opacity-80 bg-black backdrop-blur-md">
             <div className="mx-auto container flex justify-between items-center">

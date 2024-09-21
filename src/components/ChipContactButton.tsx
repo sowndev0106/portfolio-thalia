@@ -1,5 +1,3 @@
-import Slider from "react-slick";
-import { chipSections } from "../sections/homepages/data";
 
 interface IChipContactButton {
     title: string

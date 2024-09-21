@@ -70,7 +70,7 @@ export default function Expertise() {
                 </SectionWithAnimation>
             </div>
 
-            <div className='pt-20 mx-5 sm:mx-0 '  id="contact-form">
+            <div className='pt-20 mb-10 mx-5 sm:mx-0'id="contact-form">
                 <SectionWithAnimation>
                     <HaveAnIdea />
                 </SectionWithAnimation>
