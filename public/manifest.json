@@ -9,13 +9,7 @@
     },
     {
       "src": "thalia-logo-1-mini.png",
-      "type": "image/png",
-      "sizes": "192x192"
-    },
-    {
-      "src": "thalia-logo-1-mini.png",
-      "type": "image/png",
-      "sizes": "512x512"
+      "type": "image/png"
     }
   ],
   "start_url": ".",
