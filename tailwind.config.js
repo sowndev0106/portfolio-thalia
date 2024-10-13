@@ -7,7 +7,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         'homepage': "url('./assets/images/background/background-homepage.png')",
-        'banner-header': "url('./assets/images/background/bg-header.png')",
+        'banner-header': "url('./assets/images/background/background-bottom-header.png')",
         'banner-header-bot': "url('./assets/images/background/background-bottom-header.png')"
       },
       colors: {

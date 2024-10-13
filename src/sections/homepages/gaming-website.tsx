@@ -1,9 +1,10 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import CardGaming from "../../components/CardGamming";
 import ChipContactButton from "../../components/ChipContactButton";
-import { Pagination } from "swiper/modules";
+import { Autoplay, Pagination } from "swiper/modules";
 import 'swiper/css';
 import 'swiper/css/pagination';
+import 'swiper/css/autoplay';
 
 export default function GamingWebsite() {
     return (
@@ -36,33 +37,52 @@ export default function GamingWebsite() {
                         1280: { slidesPerView: 4 }, // Medium desktops
                         1536: { slidesPerView: 4 }  // Large desktops
                     }}
-                    modules={[Pagination]}
+                    autoplay={
+                        {
+                            delay: 3000,
+                        }
+                    }
+                    modules={[Pagination, Autoplay]}
                     className="root-swiper"
                 >
                     <SwiperSlide >
-                        <CardGaming image="./assets/images/banners/gamming-website-4.png" title="Disney Speedstorm" 
-                        urlProject="https://www.behance.net/gallery/190730687/Gaming-Website-UIUX-Design-Disney-Speedstorm"
-                        url="https://disneyspeedstorm.com/"
-                         />
+                        <CardGaming image="./assets/images/banners/gamming-website-4.png" title="Disney Speedstorm"
+                            urlProject="https://www.behance.net/gallery/190730687/Gaming-Website-UIUX-Design-Disney-Speedstorm"
+                            url="https://disneyspeedstorm.com/"
+                        />
                     </SwiperSlide>
                     <SwiperSlide >
-                        <CardGaming image="./assets/images/banners/gamming-website-1.png" title="Disney Magic Kingdom" 
-                        urlProject="https://www.behance.net/gallery/190721493/Gaming-Website-UIUX-Design-Disney-Magic-Kingdoms"
-                        url="https://www.disney-magic-kingdoms.com/"
-                         />
+                        <CardGaming image="./assets/images/banners/gamming-website-1.png" title="Disney Magic Kingdom"
+                            urlProject="https://www.behance.net/gallery/190721493/Gaming-Website-UIUX-Design-Disney-Magic-Kingdoms"
+                            url="https://www.disney-magic-kingdoms.com/"
+                        />
                     </SwiperSlide>
                     <SwiperSlide >
-                        <CardGaming image="./assets/images/banners/gamming-website-2.png" title="Clash of clans" 
-                        urlProject="https://www.behance.net/gallery/187028411/Gaming-Website-Design-Clash-of-Clans-Website-Revamp"
-                         />
+                        <CardGaming image="./assets/images/banners/gamming-website-2.png" title="Clash of clans"
+                            urlProject="https://www.behance.net/gallery/187028411/Gaming-Website-Design-Clash-of-Clans-Website-Revamp"
+                        />
                     </SwiperSlide>
                     <SwiperSlide >
-                        <CardGaming image="./assets/images/banners/gamming-website-3.png" title="Asphalts Legend Unite" 
-                        url="https://asphaltlegendsunite.com/" />
+                        <CardGaming image="./assets/images/banners/gamming-website-3.png" title="Asphalts Legend Unite"
+                            url="https://asphaltlegendsunite.com/" />
                     </SwiperSlide>
+
+                    <SwiperSlide >
+                        <CardGaming image="./assets/images/banners/gamming-website-5.png" title="Asphalts Legend Unite"
+                            url="https://carmensandiego-game.com/"
+                            urlProject="https://www.behance.net/gallery/208782363/Gaming-Website-Design-Carmen-Sandiego"
+                        />
+                    </SwiperSlide>
+
+                    <SwiperSlide >
+                        <CardGaming image="./assets/images/banners/gamming-website-6.png" title="Asphalts Legend Unite"
+                            urlProject="https://www.behance.net/gallery/208861217/Game-Store-UIUX-Design"
+                        />
+                    </SwiperSlide>
+
                 </Swiper>
             </div>
 
-        </div>
+        </div >
     );
 }

@@ -63,7 +63,7 @@ export default function HaveAnIdea() {
   };
 
   return (
-    <div className="pb-20 flex items-center justify-between flex-col">
+    <div className="pb-20 flex items-center justify-between flex-col text-white w-full">
       <div className="flex items-center justify-between flex-col mb-10">
         <div
           className={`font-size-text-2xl font-bold  mb-2  text-center  text-white`}
@@ -93,55 +93,57 @@ export default function HaveAnIdea() {
         </div>
       ) : (
         <form onSubmit={handleSubmit} className="space-y-4 w-full max-w-4xl  ">
-          <div className=" "          >
-            <input
-              type="email"
-              name="email"
-              placeholder="Email*"
-              required
-              className="w-full p-3 px-5 rounded-2xl  border border-white/50 text-white font-size-text-md
-            backdrop-filter bg-opacity-10 bg-white backdrop-blur-md
+
+          <input
+            type="email"
+            name="email"
+            placeholder="Email*"
+            required
+            className=" w-full p-3 px-5 rounded-2xl border border-white/50 text-white font-size-text-md
+            bg-opacity-10 backdrop-filter backdrop-blur-[20px] bg-white
               "
-             
-              onChange={handleInputChange}
-            />
-          </div>
+            onChange={handleInputChange}
+          />
           <input
             type="text"
             name="subject"
             placeholder="Subject*"
             required
             className="w-full p-3 px-5 rounded-2xl border border-white/50 text-white font-size-text-md
-           backdrop-filter bg-opacity-10 bg-white backdrop-blur-md
+            bg-opacity-10 backdrop-filter backdrop-blur-[20px] bg-white
             "
+            style={{
+              backdropFilter: "blur(20px)",
+            }}
             onChange={handleInputChange}
-          />
+          >
+          </input>
           <textarea
             name="message"
             placeholder="Type your message here..."
             required
             className="w-full p-3 px-5 rounded-2xl h-52 border border-white/50 text-white font-size-text-md
-           backdrop-filter bg-opacity-10 bg-white backdrop-blur-md"
+            backdrop-filter backdrop-blur-[20px] bg-opacity-10 bg-white"
             onChange={handleInputChange}
           />
           <div className="flex justify-center items-center">
             <button type="submit" disabled={isLoading}>
               {
-                isLoading ? 
-                <ChipLink
-                title="Sending..."
-                bgColor="bgYellowGreen"
-              />  
-              :
-                <ChipLink
-                title="Send"
-                pathIcon="./assets/images/icon/contact-black.png"
-                bgColor="bgYellowGreen"
-              /> 
+                isLoading ?
+                  <ChipLink
+                    title="Sending..."
+                    bgColor="bgYellowGreen"
+                  />
+                  :
+                  <ChipLink
+                    title="Send"
+                    pathIcon="./assets/images/icon/contact-black.png"
+                    bgColor="bgYellowGreen"
+                  />
               }
-              
+
             </button>
-           
+
           </div>
         </form>
       )}

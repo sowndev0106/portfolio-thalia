@@ -22,7 +22,7 @@ export default function CardGaming(props: ICardGamingProps) {
                 </div>
             </div>
             <div className={`mt-5 font-size-text-md underline underline-offset-2 `}>
-                 <a href={props.urlProject || "#"} className={`${props.urlProject ? "text-yellow-green" : "hidden"} flex items-center mb-2`} target="_blank">
+                <a href={props.urlProject || "#"} className={`${props.urlProject ? "text-yellow-green" : "hidden"} flex items-center mb-2`} target="_blank">
                     <div> View project </div>
                     <img src={`${props.urlProject ? "./assets/images/icon/up-arrow.svg" : "./assets/images/icon/up-arrow-gray.png"} `} alt="Contact" className="ml-1 w-[20px] h-[20px] " />
                 </a>

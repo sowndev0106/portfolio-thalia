@@ -6,7 +6,7 @@ export default function MainNav() {
     const [tag, setTag] = useState('');
 
     useEffect(() => {
-        const updateTag = () =>{
+        const updateTag = () => {
             setTag(window.location.hash.substring(1)); // Get the tag from the URL
             ReactGA.send({ hitType: "pageview", page: `${window.location.pathname}${window.location.hash}`, title: "Nav bar" });
         };
