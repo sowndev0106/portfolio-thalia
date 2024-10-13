@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+    * {
+      --tw-backdrop-sepia:  ;
+      --will-be-deleted: ; 
+    }
+  }
+
 .flex-center {
     @apply flex items-center justify-center;
 }
@@ -50,3 +57,11 @@
 .grecaptcha-badge {
     @apply hidden;
 }
+
+
+div.transbox {
+    background-color: rgba(255, 255, 255, 0.17);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    font-weight: bold;
+  }

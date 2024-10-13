@@ -32,7 +32,7 @@ export default function OurValuedPartners(props: IBrandingLogoProps) {
                     }
                 </div>
             </div>
-                    
+
             <div className="py-10">
                 <div className="flex justify-center">
                     <ChipContactButton title="Contact" pathIcon="./assets/images/icon/contact-black.png" />
