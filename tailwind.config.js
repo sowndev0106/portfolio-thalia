@@ -7,7 +7,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         'homepage': "url('./assets/images/background/background-homepage.png')",
-        'banner-header': "url('./assets/images/background/background-bottom-header.png')",
+        'banner-header': "url('./assets/images/background/background-top-header.png')",
         'banner-header-bot': "url('./assets/images/background/background-bottom-header.png')"
       },
       colors: {
@@ -34,5 +34,5 @@ module.exports = {
     'text-purple',
     'border-purple',
   ],
-  plugins: [require('tailwind-scrollbar-hide')],
+  plugins: [require('tailwind-scrollbar-hide'),  require('@tailwindcss/typography'),],
 }

@@ -68,14 +68,14 @@ export default function GamingWebsite() {
                     </SwiperSlide>
 
                     <SwiperSlide >
-                        <CardGaming image="./assets/images/banners/gamming-website-5.png" title="Asphalts Legend Unite"
+                        <CardGaming image="./assets/images/banners/gamming-website-5.png" title="Carmen Sandiego"
                             url="https://carmensandiego-game.com/"
                             urlProject="https://www.behance.net/gallery/208782363/Gaming-Website-Design-Carmen-Sandiego"
                         />
                     </SwiperSlide>
 
                     <SwiperSlide >
-                        <CardGaming image="./assets/images/banners/gamming-website-6.png" title="Asphalts Legend Unite"
+                        <CardGaming image="./assets/images/banners/gamming-website-6.png" title="Gameloft shop"
                             urlProject="https://www.behance.net/gallery/208861217/Game-Store-UIUX-Design"
                         />
                     </SwiperSlide>
