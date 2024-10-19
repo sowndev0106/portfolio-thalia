@@ -48,7 +48,7 @@ export default function MainNav() {
                     <a href="/#branding" className={`block lg:inline-block ${tag === "branding" ? "text-yellow-green" : "hover:text-yellow-green"} py-2 lg:py-0`}>
                         Branding
                     </a>
-                    <a href="/about-us" className={`block lg:inline-block ${tag === "about-us" ? "text-yellow-green" : "hover:text-yellow-green"} py-2 lg:py-0`}>
+                    <a href="/#about-us" className={`block lg:inline-block ${tag === "about-us" ? "text-yellow-green" : "hover:text-yellow-green"} py-2 lg:py-0`}>
                         About Us
                     </a>
                 </div>
