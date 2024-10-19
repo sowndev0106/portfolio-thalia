@@ -39,16 +39,16 @@ export default function MainNav() {
 
                 {/* Navigation Links */}
                 <div className={`lg:flex lg:space-x-8 ${isOpen ? "block p-7" : "hidden"} absolute lg:static top-[100%] left-0 w-full lg:w-auto bg-opacity-90 bg-black lg:bg-transparent text-center lg:text-left`}>
-                    <a href="#game-industry" className={`block lg:inline-block ${tag === "game-industry" ? "text-yellow-green" : "hover:text-yellow-green"} py-2 lg:py-0`}>
+                    <a href="/#game-industry" className={`block lg:inline-block ${tag === "game-industry" ? "text-yellow-green" : "hover:text-yellow-green"} py-2 lg:py-0`}>
                         Game Industry
                     </a>
-                    <a href="#blockchain" className={`block lg:inline-block ${tag === "blockchain" ? "text-yellow-green" : "hover:text-yellow-green"} py-2 lg:py-0`}>
+                    <a href="/#blockchain" className={`block lg:inline-block ${tag === "blockchain" ? "text-yellow-green" : "hover:text-yellow-green"} py-2 lg:py-0`}>
                         Blockchain
                     </a>
-                    <a href="#branding" className={`block lg:inline-block ${tag === "branding" ? "text-yellow-green" : "hover:text-yellow-green"} py-2 lg:py-0`}>
+                    <a href="/#branding" className={`block lg:inline-block ${tag === "branding" ? "text-yellow-green" : "hover:text-yellow-green"} py-2 lg:py-0`}>
                         Branding
                     </a>
-                    <a href="#about-us" className={`block lg:inline-block ${tag === "about-us" ? "text-yellow-green" : "hover:text-yellow-green"} py-2 lg:py-0`}>
+                    <a href="/about-us" className={`block lg:inline-block ${tag === "about-us" ? "text-yellow-green" : "hover:text-yellow-green"} py-2 lg:py-0`}>
                         About Us
                     </a>
                 </div>

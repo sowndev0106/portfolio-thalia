@@ -6,16 +6,13 @@ import MainNav from "../sections/nav/main-nav";
 
 export default function Homepage() {
     return (
-        <div className="bg-black " >
-            <MainNav />
+        < >
+
             <BannerHeader />
-            <div className="bg-black" >
-                <div className='bg-center bg-homepage  bg-no-repeat bg-cover sm:rounded-t-[0px]  md:rounded-t-[100px]  relative z-40'>
-                    <Expertise />
-                </div>
+            <div className='bg-center bg-homepage  bg-no-repeat bg-cover sm:rounded-t-[0px]  md:rounded-t-[100px]  relative z-40'>
+                <Expertise />
             </div>
-            <Footer />
-        </div>
+        </>
     )
 
 }
