@@ -63,7 +63,7 @@ export default function HaveAnIdea() {
   };
 
   return (
-    <div id="contact-form" className="bg-no-repeat bg-cover bg-[url('./assets/images/background/background-top-header.png')]">
+    <div id="contact-form" className="bg-no-repeat bg-contain bg-[url('./assets/images/background/background-contact-form.png')]">
       <div className="container mx-auto p-20 flex items-center justify-between flex-col text-white w-full">
         <div className="flex items-center justify-between flex-col mb-10">
           <div
