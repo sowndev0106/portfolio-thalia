@@ -64,7 +64,7 @@ export default function HaveAnIdea() {
 
   return (
     <div id="contact-form" className="bg-no-repeat bg-contain bg-[url('./assets/images/background/background-contact-form.png')]">
-      <div className="container mx-auto p-20 flex items-center justify-between flex-col text-white w-full">
+      <div className="container mx-auto  pt-20 pb-20  flex items-center justify-between flex-col text-white w-full">
         <div className="flex items-center justify-between flex-col mb-10">
           <div
             className={`font-size-text-2xl font-bold  mb-2  text-center  text-white`}
@@ -93,7 +93,7 @@ export default function HaveAnIdea() {
             <p className=" text-white text-opacity-80">We'll get back to you soon.</p>
           </div>
         ) : (
-          <form onSubmit={handleSubmit} className="space-y-4 w-full max-w-4xl  ">
+          <form onSubmit={handleSubmit} className="space-y-4">
 
             <input
               type="email"

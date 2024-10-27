@@ -37,7 +37,7 @@ export default function AboutUs() {
                     </div>
                 </div>
                 <div>
-                    <article className="mx-auto prose prose-custom" style={{ color: "white" }}>
+                    <article className="mx-auto prose prose-custom container  flex items-center justify-between flex-col text-white w-full" style={{ color: "white" }}>
                         {
                             data.content ? <div dangerouslySetInnerHTML={{ __html: data.content }} /> :
                                 <div>No content</div>
