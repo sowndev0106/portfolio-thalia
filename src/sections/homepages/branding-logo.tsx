@@ -20,7 +20,7 @@ export default function BrandingLogo(props: IBrandingLogoProps) {
                     <div className=' font-size-text-xl font-bold w-full  text-white'>{props.title}</div>
                 </div>
                 <div>
-                    <ChipContactButton title="Contact" pathIcon="./assets/images/icon/contact-black.png" />
+                    <ChipContactButton title="Contact" pathIcon="/assets/images/icon/contact-black.png" />
                 </div>
             </div>
             <div className="py-10">

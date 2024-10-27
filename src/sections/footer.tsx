@@ -15,7 +15,7 @@ export default function Footer(props: IBrandingLogoProps) {
                         {/* Logo */}
                         <div className="flex justify-center md:align-middle" >
                             <div className="flex flex-col">
-                                <img src={"./assets/images/logo/thalia-logo-1.png"} alt="Logo" className=" w-[220px]" />
+                                <img src={"/assets/images/logo/thalia-logo-1.png"} alt="Logo" className=" w-[220px]" />
                                 <div className={` mt-2 text-white font-thin  text-[14px]  md:text-16px] text-opacity-80 text-center `}>Creative Agency</div>
                             </div>
                         </div>
@@ -23,13 +23,13 @@ export default function Footer(props: IBrandingLogoProps) {
                         {/* Social icon */}
                         <div className="flex items-center justify-center gap-5 align-bottom md:mb-[-50px]">
                             <a href="mailto:thaliatran161@gmail.com" target="_blank">
-                                <img src={"./assets/images/icon/footer_be.svg"} alt="mail" className="h-8" />
+                                <img src={"/assets/images/icon/footer_be.svg"} alt="mail" className="h-8" />
                             </a>
                             <a href="https://www.linkedin.com/in/thaliatran294/" target="_blank">
-                                <img src={"./assets/images/icon/footer_linkedin.svg"} alt="mail" className="h-8" />
+                                <img src={"/assets/images/icon/footer_linkedin.svg"} alt="mail" className="h-8" />
                             </a>
                             <a href="https://www.behance.net/thaliatran" target="_blank">
-                                <img src={"./assets/images/icon/footer_mail.svg"} alt="mail" className="h-8" />
+                                <img src={"/assets/images/icon/footer_mail.svg"} alt="mail" className="h-8" />
                             </a>
                         </div>
                     </div>

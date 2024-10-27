@@ -64,7 +64,7 @@ export default function HaveAnIdea() {
 
   return (
     <div id="contact-form" className="bg-no-repeat bg-contain bg-[url('./assets/images/background/background-contact-form.png')]">
-      <div className="container mx-auto  pt-20 pb-20  flex items-center justify-between flex-col text-white w-full">
+      <div className="container mx-auto  pt-20 pb-20 pl-10 pr-10 flex items-center justify-between flex-col text-white w-full">
         <div className="flex items-center justify-between flex-col mb-10">
           <div
             className={`font-size-text-2xl font-bold  mb-2  text-center  text-white`}
@@ -138,7 +138,7 @@ export default function HaveAnIdea() {
                     :
                     <ChipLink
                       title="Send"
-                      pathIcon="./assets/images/icon/contact-black.png"
+                      pathIcon="/assets/images/icon/contact-black.png"
                       bgColor="bgYellowGreen"
                     />
                 }

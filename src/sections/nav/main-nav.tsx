@@ -26,12 +26,12 @@ export default function MainNav() {
                 {/* Logo */}
                 <a className="font-bold ml-5" href="/">
                     <img
-                        src={"./assets/images/logo/thalia-logo-1.png"}
+                        src={"/assets/images/logo/thalia-logo-1.png"}
                         alt="Logo"
                         className="w-[220px] hidden lg:block"
                     />
                     <img
-                        src={"./assets/images/logo/thalia-logo-1-mini.png"}
+                        src={"/assets/images/logo/thalia-logo-1-mini.png"}
                         alt="Logo"
                         className="lg:hidden"
                     />
@@ -48,13 +48,13 @@ export default function MainNav() {
                     <a href="/#branding" className={`block lg:inline-block ${tag === "branding" ? "text-yellow-green" : "hover:text-yellow-green"} py-2 lg:py-0`}>
                         Branding
                     </a>
-                    <a href="/#about-us" className={`block lg:inline-block ${tag === "about-us" ? "text-yellow-green" : "hover:text-yellow-green"} py-2 lg:py-0`}>
+                    <a href="/about-us" className={`block lg:inline-block ${tag === "about-us" ? "text-yellow-green" : "hover:text-yellow-green"} py-2 lg:py-0`}>
                         About Us
                     </a>
                 </div>
 
                 <div className="flex items-center gap-5">
-                    <ChipContactButton title="Contact" pathIcon="./assets/images/icon/contact-black.png" />
+                    <ChipContactButton title="Contact" pathIcon="/assets/images/icon/contact-black.png" />
 
                     {/* Hamburger Icon */}
                     <div className="lg:hidden mr-5 flex items-center">

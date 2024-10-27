@@ -29,7 +29,7 @@ export default function BannerHeader() {
                 <div className=" w-full text-center h-1/2 flex flex-col justify-between items-center pb-16 relative z-20" >
                     <div className="inline-block mt-14 animate-bounce">
                         <a href="#our-expertise" className="bg-[#601FEB] button-circle p-5 md:p-7 xl:p-7 ">
-                            <img src="./assets/images/icon/down-arrow.png" alt="Contact" className="inline-block" />
+                            <img src="/assets/images/icon/down-arrow.png" alt="Contact" className="inline-block" />
                         </a>
                     </div>
                     <div className="w-full z-20" >
@@ -66,7 +66,7 @@ export default function BannerHeader() {
                     </div>
                 </div>
                 <div className='absolute w-full z-0 bottom-[-200px] '>
-                    <img className=' w-full h-[600px]' src="./assets/images/background/background-bottom-header.png" alt="" />
+                    <img className=' w-full h-[600px]' src="/assets/images/background/background-bottom-header.png" alt="" />
                 </div>
             </div>
         </div>

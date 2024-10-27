@@ -8,7 +8,7 @@ import HaveAnIdea from "../sections/homepages/have-an-idea";
 
 export default function Layout() {
     return (
-        <div className="bg-black h-full" >
+        <div className="bg-black h-full " >
             < MainNav />
             <Outlet />
             <HaveAnIdea />

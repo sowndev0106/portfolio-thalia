@@ -25,7 +25,7 @@ export default function GroupBannerSection(props: IGroupBannerSectionProps) {
                 </div>
                 {/* button contact */}
                 <div>
-                    <ChipContactButton title="Contact" pathIcon="./assets/images/icon/contact-black.png" />
+                    <ChipContactButton title="Contact" pathIcon="/assets/images/icon/contact-black.png" />
                 </div>
             </div>
             {/* slide cards */}

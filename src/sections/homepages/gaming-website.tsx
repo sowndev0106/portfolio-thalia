@@ -17,7 +17,7 @@ export default function GamingWebsite() {
                 </div>#
                 {/* button contact */}
                 <div>
-                    <ChipContactButton title="Contact" pathIcon="./assets/images/icon/contact-black.png" />
+                    <ChipContactButton title="Contact" pathIcon="/assets/images/icon/contact-black.png" />
                 </div>
             </div>
             {/* slide cards */}
@@ -46,36 +46,36 @@ export default function GamingWebsite() {
                     className="root-swiper"
                 >
                     <SwiperSlide >
-                        <CardGaming image="./assets/images/banners/gamming-website-4.png" title="Disney Speedstorm"
+                        <CardGaming image="/assets/images/banners/gamming-website-4.png" title="Disney Speedstorm"
                             urlProject="https://www.behance.net/gallery/190730687/Gaming-Website-UIUX-Design-Disney-Speedstorm"
                             url="https://disneyspeedstorm.com/"
                         />
                     </SwiperSlide>
                     <SwiperSlide >
-                        <CardGaming image="./assets/images/banners/gamming-website-1.png" title="Disney Magic Kingdom"
+                        <CardGaming image="/assets/images/banners/gamming-website-1.png" title="Disney Magic Kingdom"
                             urlProject="https://www.behance.net/gallery/190721493/Gaming-Website-UIUX-Design-Disney-Magic-Kingdoms"
                             url="https://www.disney-magic-kingdoms.com/"
                         />
                     </SwiperSlide>
                     <SwiperSlide >
-                        <CardGaming image="./assets/images/banners/gamming-website-2.png" title="Clash of clans"
+                        <CardGaming image="/assets/images/banners/gamming-website-2.png" title="Clash of clans"
                             urlProject="https://www.behance.net/gallery/187028411/Gaming-Website-Design-Clash-of-Clans-Website-Revamp"
                         />
                     </SwiperSlide>
                     <SwiperSlide >
-                        <CardGaming image="./assets/images/banners/gamming-website-3.png" title="Asphalts Legend Unite"
+                        <CardGaming image="/assets/images/banners/gamming-website-3.png" title="Asphalts Legend Unite"
                             url="https://asphaltlegendsunite.com/" />
                     </SwiperSlide>
 
                     <SwiperSlide >
-                        <CardGaming image="./assets/images/banners/gamming-website-5.png" title="Carmen Sandiego"
+                        <CardGaming image="/assets/images/banners/gamming-website-5.png" title="Carmen Sandiego"
                             url="https://carmensandiego-game.com/"
                             urlProject="https://www.behance.net/gallery/208782363/Gaming-Website-Design-Carmen-Sandiego"
                         />
                     </SwiperSlide>
 
                     <SwiperSlide >
-                        <CardGaming image="./assets/images/banners/gamming-website-6.png" title="Gameloft shop"
+                        <CardGaming image="/assets/images/banners/gamming-website-6.png" title="Gameloft shop"
                             urlProject="https://www.behance.net/gallery/208861217/Game-Store-UIUX-Design"
                         />
                     </SwiperSlide>

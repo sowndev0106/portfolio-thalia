@@ -1,12 +1,4 @@
 
-h1 {
-    color: white;
-}
-
-.prose-custom {
-    @apply  prose-h1:text-white
-}
-/* reset-prose.css */
 .prose {
     --tw-prose-body: unset;
     --tw-prose-headings: unset;

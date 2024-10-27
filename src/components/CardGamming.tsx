@@ -14,7 +14,7 @@ export default function CardGaming(props: ICardGamingProps) {
                         {props.title}
                     </div>
                     <a href="#next-section" className="bg-[#414141] button-circle p-2 sm:p-3 ">
-                        <img src="./assets/images/icon/up-arrow.png" alt="Contact" className="w-[25px] h-[25px]" />
+                        <img src="/assets/images/icon/up-arrow.png" alt="Contact" className="w-[25px] h-[25px]" />
                     </a>
                 </div>
                 <div className="w-full bg-cover bg-center " >
@@ -24,11 +24,11 @@ export default function CardGaming(props: ICardGamingProps) {
             <div className={`mt-5 font-size-text-md underline underline-offset-2 `}>
                 <a href={props.urlProject || "#"} className={`${props.urlProject ? "text-yellow-green" : "hidden"} flex items-center mb-2`} target="_blank">
                     <div> View project </div>
-                    <img src={`${props.urlProject ? "./assets/images/icon/up-arrow.svg" : "./assets/images/icon/up-arrow-gray.png"} `} alt="Contact" className="ml-1 w-[20px] h-[20px] " />
+                    <img src={`${props.urlProject ? "/assets/images/icon/up-arrow.svg" : "/assets/images/icon/up-arrow-gray.png"} `} alt="Contact" className="ml-1 w-[20px] h-[20px] " />
                 </a>
                 <a href={props.url || "#"} className={`${props.url ? "text-[#9360FF]" : "hidden"} flex items-center`} target="_blank">
                     <div> View live website </div>
-                    <img src={`${props.url ? "./assets/images/icon/up-arrow-p.svg" : "./assets/images/icon/up-arrow-gray.png"} `} alt="Contact" className="ml-1 w-[12px] h-[12px]" />
+                    <img src={`${props.url ? "/assets/images/icon/up-arrow-p.svg" : "/assets/images/icon/up-arrow-gray.png"} `} alt="Contact" className="ml-1 w-[12px] h-[12px]" />
                 </a>
             </div>
         </a>
