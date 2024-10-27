@@ -2,7 +2,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Homepage from './pages/homepage';
 import ReactGA from 'react-ga4';
 import Layout from './layouts/layout';
-import AboutUs from './pages/about-us';
+import AboutUs from './pages/about-us/about-us';
 const TRACKING_ID = "G-0VH7FMSGB1";
 ReactGA.initialize(TRACKING_ID);
 function App() {

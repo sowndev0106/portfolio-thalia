@@ -1,0 +1,49 @@
+
+h1 {
+    color: white;
+}
+
+.prose-custom {
+    @apply  prose-h1:text-white
+}
+/* reset-prose.css */
+.prose {
+    --tw-prose-body: unset;
+    --tw-prose-headings: unset;
+    --tw-prose-lead: unset;
+    --tw-prose-links: unset;
+    --tw-prose-bold: unset;
+    --tw-prose-counters: unset;
+    --tw-prose-bullets: unset;
+    --tw-prose-hr: unset;
+    --tw-prose-quotes: unset;
+    --tw-prose-quote-borders: unset;
+    --tw-prose-captions: unset;
+    --tw-prose-kbd: unset;
+    --tw-prose-kbd-shadows: unset;
+    --tw-prose-code: unset;
+    --tw-prose-pre-code: unset;
+    --tw-prose-pre-bg: unset;
+    --tw-prose-th-borders: unset;
+    --tw-prose-td-borders: unset;
+    --tw-prose-invert-body: unset;
+    --tw-prose-invert-headings: unset;
+    --tw-prose-invert-lead: unset;
+    --tw-prose-invert-links: unset;
+    --tw-prose-invert-bold: unset;
+    --tw-prose-invert-counters: unset;
+    --tw-prose-invert-bullets: unset;
+    --tw-prose-invert-hr: unset;
+    --tw-prose-invert-quotes: unset;
+    --tw-prose-invert-quote-borders: unset;
+    --tw-prose-invert-captions: unset;
+    --tw-prose-invert-kbd: unset;
+    --tw-prose-invert-kbd-shadows: unset;
+    --tw-prose-invert-code: unset;
+    --tw-prose-invert-pre-code: unset;
+    --tw-prose-invert-pre-bg: unset;
+    --tw-prose-invert-th-borders: unset;
+    --tw-prose-invert-td-borders: unset;
+    font-size: unset;
+    line-height: unset;
+}

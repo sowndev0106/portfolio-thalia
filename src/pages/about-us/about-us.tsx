@@ -1,19 +1,15 @@
 
 
 import { useEffect, useState } from "react";
-import parse from 'html-react-parser';
-import "..//ckeditor5-content.css"
+import { apiService, SERVER_URL } from "../../api";
+import "./about-us.css";
 
-const hostUrl = 'http://localhost:1337';
-
+const hostUrl = SERVER_URL
 export default function AboutUs() {
     const [data, setData] = useState({ title: '', content: '', banner: '' });
-
     useEffect(() => {
-        fetch(`${hostUrl}/api/about-us?populate=*`)
-            .then(response => response.json())
+        apiService.getAboutUs()
             .then(dataRes => {
-                console.log('dataRes:', dataRes);
                 setData({
                     title: dataRes?.data?.attributes?.title,
                     content: dataRes?.data?.attributes?.content,
@@ -22,13 +18,15 @@ export default function AboutUs() {
             })
             .catch(error => console.error('Error fetching banner data:', error));
     }, []);
+
     console.log({ data })
 
     return (
 
         <>
-            <div> {/* Banner */}
-                <div className={`pt-[80px] text-white bg-no-repeat bg-cover  flex justify-center items-center text-center h-[400px]`}
+            <div>
+                {/* Banner */}
+                <div className={`pt-[80px] text-white bg-no-repeat bg-cover flex justify-center items-center text-center h-[400px]`}
                     style={
                         {
                             backgroundImage: `url(${hostUrl}${data.banner})`
@@ -38,16 +36,16 @@ export default function AboutUs() {
                         {data.title}
                     </div>
                 </div>
-                <div className=" text-white">
-                    <h1>ahh</h1>
-                    <div className="container mx-auto mt-10 mb-10">
-                        <h1><span > Thalia Design LLC</span></h1>
+                <div>
+                    <article className="mx-auto prose prose-custom" style={{ color: "white" }}>
                         {
-
+                            data.content ? <div dangerouslySetInnerHTML={{ __html: data.content }} /> :
+                                <div>No content</div>
                         }
-                    </div>
+                    </article>
                 </div>
             </div >
+
         </>
     )
 
