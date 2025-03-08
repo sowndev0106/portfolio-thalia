@@ -7,6 +7,7 @@ import "swiper/css/pagination";
 import "swiper/css/autoplay";
 import { useEffect, useState } from "react";
 import { apiService, SERVER_URL } from "../../api";
+import { LuMoveUpRight } from "react-icons/lu";
 
 export default function GamingWebsite() {
   const [gamingWebsites, setGamingWebsites] = useState<any[]>([]);
@@ -29,7 +30,16 @@ export default function GamingWebsite() {
           </div>
         </div>
         {/* button contact */}
-        <div>
+        <div className="flex items-center gap-6">
+          <a className="flex justify-center " href="/gaming-websites">
+            <button
+              type="button"
+              className="flex gap-2.5 items-center text-white bg-white bg-opacity-20 border border-gray-300 focus:outline-none hover:bg-opacity-30 focus:ring-4 font-medium rounded-3xl text-lg px-5 py-2.5"
+            >
+              <LuMoveUpRight />
+              See more{" "}
+            </button>
+          </a>
           <ChipContactButton
             title="Contact"
             pathIcon="/assets/images/icon/contact-black.png"

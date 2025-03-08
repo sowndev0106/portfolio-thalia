@@ -5,6 +5,8 @@ import Layout from "./layouts/layout";
 import AboutUs from "./pages/about-us/about-us";
 import News from "./pages/news";
 import GamingWebsiteDetail from "./pages/gaming-website-detail";
+import GamingWebsite from "./sections/homepages/gaming-website";
+import GamingWebsitePage from "./pages/list-gaming-website";
 const TRACKING_ID = "G-0VH7FMSGB1";
 ReactGA.initialize(TRACKING_ID);
 function App() {
@@ -19,6 +21,7 @@ function App() {
             path="gaming-websites/:slug"
             element={<GamingWebsiteDetail />}
           />
+          <Route path="gaming-websites" element={<GamingWebsitePage />} />
         </Route>
       </Routes>
     </BrowserRouter>

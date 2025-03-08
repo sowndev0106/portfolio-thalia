@@ -3,7 +3,6 @@ import { apiService, SERVER_URL } from "../api";
 import RenderNews from "../components/render-news/RenderNews";
 import { useParams } from "react-router-dom";
 import GamingWebsite from "../sections/homepages/gaming-website";
-const hostUrl = SERVER_URL;
 export default function GamingWebsiteDetail() {
   const { slug } = useParams();
   const [data, setData] = useState({ title: "", content: "", banner: "" });
@@ -28,7 +27,7 @@ export default function GamingWebsiteDetail() {
 
   return (
     <>
-      <RenderNews {...data} />
+      <RenderNews banner={data.banner} title={""} content={data.content} />
       <div className="mx-auto container  pt-10 scroll-smooth  scroll-mt-20 ">
         <div className="pt-20 mx-5 sm:mx-0  scroll-mt-20" id="game-industry">
           <GamingWebsite />
