@@ -1,4 +1,9 @@
-import { API_GET_ABOUT_US, API_GET_NEWS_BY_SLUG } from "./constance";
+import {
+  API_GET_ABOUT_US,
+  API_GET_GAMING_WEBSITES_BY_SLUG,
+  API_GET_LIST_GAMING_WEBSITES,
+  API_GET_NEWS_BY_SLUG,
+} from "./constance";
 
 class ApiService {
   constructor() {}
@@ -9,6 +14,14 @@ class ApiService {
 
   async getNewsBySlug(slug: string) {
     return this.fetchApi(API_GET_NEWS_BY_SLUG(slug));
+  }
+
+  async getListGamingWebsites() {
+    return this.fetchApi(API_GET_LIST_GAMING_WEBSITES);
+  }
+
+  async getGamingWebsiteBySlug(slug: string) {
+    return this.fetchApi(API_GET_GAMING_WEBSITES_BY_SLUG(slug));
   }
 
   private async fetchApi(url: string, props?: RequestInit) {
