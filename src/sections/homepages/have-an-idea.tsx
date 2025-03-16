@@ -63,7 +63,10 @@ export default function HaveAnIdea() {
   };
 
   return (
-    <div id="contact-form" className="bg-no-repeat bg-contain bg-[url('./assets/images/background/background-contact-form.png')]">
+    <div
+      id="contact-form"
+      className="bg-no-repeat bg-contain bg-[url('./assets/images/background/background-contact-form.png')]"
+    >
       <div className="container mx-auto  pt-20 pb-20 pl-10 pr-10 flex items-center justify-between flex-col text-white w-full">
         <div className="flex items-center justify-between flex-col mb-10">
           <div
@@ -75,13 +78,8 @@ export default function HaveAnIdea() {
           <div
             className={` text-white text-[14px] text-center  md:text-[22px] text-opacity-80`}
           >
-            Visually attractive design from concept to final result.{" "}
-          </div>
-
-          <div
-            className={` text-white text-[14px] text-center  md:text-[22px] text-opacity-80`}
-          >
-            We create solutions that are bold and forward-looking.
+            Visually attractive design from concept to final result. Let's have
+            a coffee and talk!
           </div>
         </div>
 
@@ -90,11 +88,12 @@ export default function HaveAnIdea() {
             <h2 className="text-2xl font-bold mb-4 text-yellow-green">
               Thank you for your message!
             </h2>
-            <p className=" text-white text-opacity-80">We'll get back to you soon.</p>
+            <p className=" text-white text-opacity-80">
+              We'll get back to you soon.
+            </p>
           </div>
         ) : (
           <form onSubmit={handleSubmit} className="space-y-4">
-
             <input
               type="email"
               name="email"
@@ -117,8 +116,7 @@ export default function HaveAnIdea() {
                 backdropFilter: "blur(20px)",
               }}
               onChange={handleInputChange}
-            >
-            </input>
+            ></input>
             <textarea
               name="message"
               placeholder="Type your message here..."
@@ -129,28 +127,19 @@ export default function HaveAnIdea() {
             />
             <div className="flex justify-center items-center">
               <button type="submit" disabled={isLoading}>
-                {
-                  isLoading ?
-                    <ChipLink
-                      title="Sending..."
-                      bgColor="bgYellowGreen"
-                    />
-                    :
-                    <ChipLink
-                      title="Send"
-                      pathIcon="/assets/images/icon/contact-black.png"
-                      bgColor="bgYellowGreen"
-                    />
-                }
-
+                {isLoading ? (
+                  <ChipLink title="Sending..." bgColor="bgYellowGreen" />
+                ) : (
+                  <ChipLink
+                    title="Send"
+                    pathIcon="/assets/images/icon/contact-black.png"
+                    bgColor="bgYellowGreen"
+                  />
+                )}
               </button>
-
             </div>
           </form>
         )}
-
-
-
       </div>
     </div>
   );
