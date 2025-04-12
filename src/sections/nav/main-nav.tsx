@@ -79,14 +79,14 @@ export default function MainNav() {
             Branding
           </a>
           <a
-            href="/about-us"
+            href="/about-thalia"
             className={`block lg:inline-block ${
-              tag === "about-us"
+              tag === "about-thalia"
                 ? "text-yellow-green"
                 : "hover:text-yellow-green"
             } py-2 lg:py-0`}
           >
-            About Us
+            About Thalia
           </a>
         </div>
 

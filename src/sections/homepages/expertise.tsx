@@ -103,7 +103,7 @@ export default function Expertise() {
         </SectionWithAnimation>
       </div>
 
-      <div className="pt-20 mx-5 sm:mx-0  scroll-mt-20" id="about-us">
+      <div className="pt-20 mx-5 sm:mx-0  scroll-mt-20" id="about-thalia">
         <SectionWithAnimation>
           <OurValuedPartners />
         </SectionWithAnimation>
